@@ -7,6 +7,10 @@ const nconf = require('nconf');
 const defaults = {
 	hapi:{
 		port:3000
+	},
+	cookie:{
+		secure : false,
+		domain : null
 	}
 };
 

@@ -23,7 +23,8 @@ server.route(routes);
 server.state('pgohelper', {
 	encoding: 'base64json',
 	ttl: 3600 * 1000,
-	isSecure: false,
+	isSecure: settings.get('cookie:secure'),
+	domain : settings.get('cookie:domain'),
 	isHttpOnly: false,
 });
 
