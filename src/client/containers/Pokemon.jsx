@@ -1,7 +1,7 @@
 import React from 'react';
 import { bindActionCreators } from 'redux'; 
 import { connect } from 'react-redux';
-
+import { fetchInventory } from '../action_creators.js';
 import { filter } from '../action_creators.js';
 import Pokemon from '../components/Pokemon';
 
@@ -17,7 +17,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return bindActionCreators({
-		filter: filter
+		filter: filter,
+		fetchInventory : fetchInventory
 	}, dispatch);
 };
 

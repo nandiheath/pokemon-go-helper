@@ -15,7 +15,7 @@ const store = makeStore();
 
 // routes
 const routes = <Route path="/" component={App}>
-	<IndexRedirect to="/login" />
+	<IndexRedirect to="/pokemon" />
 	<Route path="/login" component={Login} />
 	<Route path="/luckyegg" component={LuckyEgg} />
 	<Route path="/pokemon" component={Pokemon} />

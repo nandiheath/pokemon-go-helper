@@ -87,7 +87,7 @@
 	var routes = _react2.default.createElement(
 		_reactRouter.Route,
 		{ path: '/', component: _App2.default },
-		_react2.default.createElement(_reactRouter.IndexRedirect, { to: '/login' }),
+		_react2.default.createElement(_reactRouter.IndexRedirect, { to: '/pokemon' }),
 		_react2.default.createElement(_reactRouter.Route, { path: '/login', component: _Login2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: '/luckyegg', component: _LuckyEgg2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: '/pokemon', component: _Pokemon2.default })
@@ -28716,11 +28716,17 @@
 		var state = arguments.length <= 0 || arguments[0] === undefined ? initialState : arguments[0];
 		var action = arguments[1];
 
+		console.log(state);
 		switch (action.type) {
 
-			case types.LOAD:
+			case types.LOGIN_SUCCESS:
 				return Object.assign({}, state, { loggedIn: true });
-
+			case types.LOGIN_FAILED:
+				return Object.assign({}, state, { loggedIn: false });
+			case types.REQUEST_FINISH:
+				return Object.assign({}, state, { isLoading: false });
+			case types.REQUEST_START:
+				return Object.assign({}, state, { isLoading: true });
 			case types.ORDERBY:
 				return Object.assign({}, state, _defineProperty({}, action.page, { orderBy: action.by }));
 
@@ -28741,8 +28747,13 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.ORDERBY = exports.LOAD = exports.LOGIN = undefined;
+	exports.LOGIN_FAILED = exports.LOGIN_SUCCESS = exports.REQUEST_FINISH = exports.REQUEST_START = exports.ORDERBY = exports.LOAD = exports.LOGIN = undefined;
 	exports.login = login;
+	exports.fetchInventory = fetchInventory;
+	exports.startRequest = startRequest;
+	exports.finishRequest = finishRequest;
+	exports.loginSuccess = loginSuccess;
+	exports.loginFailed = loginFailed;
 	exports.load = load;
 	exports.orderBy = orderBy;
 
@@ -28752,6 +28763,10 @@
 	var LOGIN = exports.LOGIN = 'LOGIN';
 	var LOAD = exports.LOAD = 'LOAD';
 	var ORDERBY = exports.ORDERBY = 'ORDERBY';
+	var REQUEST_START = exports.REQUEST_START = "REQUEST_START";
+	var REQUEST_FINISH = exports.REQUEST_FINISH = "REQUEST_FINISH";
+	var LOGIN_SUCCESS = exports.LOGIN_SUCCESS = "LOGIN_SUCCESS";
+	var LOGIN_FAILED = exports.LOGIN_FAILED = "LOGIN_FAILED";
 
 	// login
 	//polyfill for safari
@@ -28766,6 +28781,8 @@
 				alt: alt
 			};
 
+			dispatch(startRequest());
+
 			// make request
 			return fetch('/api/login', {
 				method: 'POST',
@@ -28773,8 +28790,39 @@
 					'Accept': 'application/json',
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify(payload) }).then(function (response) {
+				credentials: 'same-origin',
+				body: JSON.stringify(payload)
+			}).then(function (response) {
+				dispatch(finishRequest());
 				if (response.ok) {
+					//return response.json();
+					return dispatch(loginSuccess());
+				} else {
+					throw response.status + ' ' + response.statusText;
+				} // TODO improve error handing  'Incorrect username or password.'
+			});
+		};
+	}
+
+	function fetchInventory(lat, lng) {
+		return function (dispatch) {
+
+			dispatch(startRequest());
+
+			// make request
+			return fetch('/api/player/inventory', {
+				method: 'GET',
+				headers: {
+					'Accept': 'application/json',
+					'Content-Type': 'application/json'
+				},
+				credentials: 'same-origin'
+			}).then(function (response) {
+				dispatch(finishRequest());
+
+				if (response.ok) {
+					// Mark the login success when reloading the page
+					dispatch(loginSuccess());
 					return response.json();
 				} else {
 					throw response.status + ' ' + response.statusText;
@@ -28786,6 +28834,30 @@
 					throw 'Error loading response data.';
 				}
 			});
+		};
+	}
+
+	function startRequest() {
+		return {
+			type: REQUEST_START
+		};
+	}
+
+	function finishRequest() {
+		return {
+			type: REQUEST_FINISH
+		};
+	}
+
+	function loginSuccess() {
+		return {
+			type: LOGIN_SUCCESS
+		};
+	}
+
+	function loginFailed() {
+		return {
+			type: LOGIN_FAILED
 		};
 	}
 
@@ -29667,12 +29739,25 @@
 
 
 				var isLoggedIn = app.loggedIn;
+				var isLoading = app.isLoading;
 				var currentPath = this.props.location.pathname;
 
 				//show pokemon and recommendation links if logged in	
 				return _react2.default.createElement(
 					'div',
 					{ className: 'app' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'loading', style: {
+								display: isLoading ? "block" : "none"
+							} },
+						_react2.default.createElement(
+							'div',
+							{ className: 'spinner' },
+							_react2.default.createElement('div', { className: 'double-bounce1' }),
+							_react2.default.createElement('div', { className: 'double-bounce2' })
+						)
+					),
 					isLoggedIn ? _react2.default.createElement(
 						'div',
 						{ className: 'app-header' },
@@ -30352,7 +30437,8 @@
 
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 		return (0, _redux.bindActionCreators)({
-			filter: _action_creators.filter
+			filter: _action_creators.filter,
+			fetchInventory: _action_creators.fetchInventory
 		}, dispatch);
 	};
 
@@ -30414,10 +30500,12 @@
 		_createClass(Pokemon, [{
 			key: 'componentWillMount',
 			value: function componentWillMount() {
-				// redirect to login if not logged in	
-				if (!this.props.app.loggedIn) {
+
+				this.props.fetchInventory().then(function () {}).catch(function (e) {
+					// When error , prompt the user to login page
+					console.dir(e);
 					_reactRouter.browserHistory.push('/login');
-				}
+				});
 			}
 		}, {
 			key: 'render',

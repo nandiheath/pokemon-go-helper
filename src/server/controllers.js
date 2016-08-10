@@ -17,66 +17,110 @@ module.exports = {
 		var token = request.payload.auth.token;
 		var latitude = request.payload.lat;
 		var longitude = request.payload.lnd;
-		var altitude = request.payload.alt;		
+		var altitude = request.payload.alt;
 
 		// debug response
-		if(username.toLowerCase() === 'test' && password.toLowerCase() === 'test') {
-			
+		if (username.toLowerCase() === 'test' && password.toLowerCase() === 'test') {
+
 			// get pre-normalize response	
-			var dummyResponse = require('./dummyData/response.json'); 
-			console.log(`pre-normalized test`);	
+			var dummyResponse = require('./dummyData/response.json');
+			console.log(`pre-normalized test`);
 			reply(dummyResponse);
 			return;
-		} else if(username.toLowerCase() === 'testraw' && password.toLowerCase() === 'test') {
-			
+		} else if (username.toLowerCase() === 'testraw' && password.toLowerCase() === 'test') {
+
 			// get dummy raw response and normalize	
-			var dummyRawResponse = require('./dummyData/raw_response.json'); 
-			console.log(`raw test`);	
+			var dummyRawResponse = require('./dummyData/raw_response.json');
+			console.log(`raw test`);
 			reply(normalize(dummyRawResponse));
 			return;
-		} else {	
-			console.log(`login attempt -- user:${username} pass:**** type:${type} lat:${latitude} lnd:${longitude} alt:${altitude}`);	
+		} else {
+			console.log(`login attempt -- user:${username} pass:**** type:${type} lat:${latitude} lnd:${longitude} alt:${altitude}`);
 		}
 
 		// create instance	
 		var login;
 		var loginProcess;
 		var provider;
-		if(type === 'google'){
+		if (type === 'google') {
 			// use authoriztion code instead of username/password
 			//loginProcess = new pogobuf.GoogleLogin().login(username , password);
 			loginProcess = new GoogleAPI().login(token);
 			provider = 'google';
 		} else {
-			loginProcess = new pogobuf.PTCLogin().login(username,password);
-			provider = 'ptc';	
-		}	
+			loginProcess = new pogobuf.PTCLogin().login(username, password);
+			provider = 'ptc';
+		}
 
-		var client = new pogobuf.Client();
+
 
 		// login and return inventory 
 		loginProcess
-		.then(token => {
+			.then(token => {
+				reply()
+					.code(200)
+					.state("pgohelper" , {
+						"token" : token,
+						"provider" : provider,
+						latitude : latitude,
+						longitude : longitude
+
+					});
+			})
+			.catch(error => {
+				console.log(error);
+				reply().code(401);
+			});
+	},
+
+	getInventory: function(request , reply) {
+
+		if (request.state.pgohelper === undefined ||
+			request.state.pgohelper.token === undefined)
+		{
+			return reply().code(401);
+		}
+
+		var latitude = request.state.pgohelper.latitude;
+		var longitude = request.state.pgohelper.latitude;
+		var provider = request.state.pgohelper.provider;
+		if (request.query.latitude !== undefined)
+			latitude = request.query.latitude;
+
+		if (request.query.longitude !== undefined)
+			longitude = request.query.longitude;
+
+
+		var client = new pogobuf.Client();
+		// TODO: using a hashtable to store this token?
+
+		new Promise((resolve, reject) => {
+			resolve(request.state.pgohelper.token);
+		}).then(token => {
+
 			client.setAuthInfo(provider, token);
 			client.setPosition(latitude, longitude);
-    			return client.init();
+			return client.init();
 		}).then(() => {
 			return client.getInventory(0);
 		}).then(inventory => {
 			// format inventory response
-			const response = normalize(inventory); 	
-			
-			if(response) {
-				reply(response).code(200);	
+			const response = normalize(inventory);
+
+			if (response) {
+				reply(response).code(200);
 			} else {
-				reply().code(401);	
+				reply().code(401);
 			}
 
 		}).catch(error => {
 			console.log(error);
 			reply().code(401);
-	       	});		
+		});
 	}
+
+
+
 }
 
 function normalize(response) {

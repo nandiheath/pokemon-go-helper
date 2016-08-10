@@ -20,6 +20,14 @@ server.connection({
 // add routes
 server.route(routes);
 
+server.state('pgohelper', {
+	encoding: 'base64json',
+	ttl: 3600 * 1000,
+	isSecure: false,
+	isHttpOnly: false,
+});
+
+
 // start server
 server.start(() => {
 	console.log('Server listening @ ' + server.info.uri);

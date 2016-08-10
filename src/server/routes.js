@@ -20,9 +20,24 @@ var routes = [
 					lat: Joi.number().required(),
 					lnd: Joi.number().required(),
 					alt: Joi.number().required()
-				}	
-			}	
-	}
+				}
+			},
+			state: {
+				parse: true, // parse and store in request.state
+				failAction: 'error' // may also be 'ignore' or 'log'
+			}
+		}
+	},
+	{
+		method: 'GET',
+		path: '/api/player/inventory',
+		handler: controllers.getInventory,
+		config: {
+			state: {
+				parse: true, // parse and store in request.state
+				failAction: 'error' // may also be 'ignore' or 'log'
+			}
+		}
 	},
 	{
 		method: 'GET',

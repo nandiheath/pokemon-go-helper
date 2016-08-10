@@ -16,10 +16,17 @@ class Pokemon extends React.Component {
 	}
 
 	componentWillMount() {
-		// redirect to login if not logged in	
-		if(!this.props.app.loggedIn) {
+
+
+		this.props.fetchInventory().
+		then(() => {
+
+			})
+		.catch((e) => {
+			// When error , prompt the user to login page
+			console.dir(e);
 			browserHistory.push('/login');
-		}
+		});
 	}
 
 	render() {
