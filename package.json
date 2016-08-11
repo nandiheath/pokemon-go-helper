@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production node index.js",
+    "debug": "node index.js",
     "webpack": "webpack -p",
     "webpack:watch": "webpack -w",
     "webpack:dev": "webpack-dev-server --config webpack.dev.config.js --devtool eval --progress --colors --hot --content-base build"
