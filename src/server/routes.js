@@ -68,7 +68,8 @@ var routes = [
 		method: 'GET',
 		path: '/{path*}',
 		handler: (request, reply) => {
-			reply.file(appRoot + '/src/client/public/index.html');	
+			// Serve the debug html which use webpack dev server
+			reply.file(appRoot + (process.env.NODE_ENV === "production" ? '/src/client/public/index.html' : '/src/client/public/debug.html'));
 		}
 
 	}
