@@ -1,6 +1,6 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-
+import { saveStateToCookie } from './../../../utils'
 class OrderBy extends React.Component {
 	constructor(props) {
 		super(props);
@@ -33,7 +33,11 @@ class OrderBy extends React.Component {
 			else 
 				this.props.setOrderBy('luckyegg','evolutions');
 		}	
-	}	
+	}
+
+	componentWillReceiveProps(nextProps){
+		saveStateToCookie('app.pokemon' , nextProps.options);
+	}
 
 	render() {
 		const {

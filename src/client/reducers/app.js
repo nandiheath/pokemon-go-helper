@@ -1,8 +1,16 @@
 import * as types from '../action_creators.js';
+import { loadStateFromCookie } from '../utils';
 
-const initialState = { loggedIn: false , pokemon: { orderBy: 'recent' }, luckyegg: { orderBy: 'evolutions' } };
 
-function app(state = initialState, action) {
+
+const initialState = { loggedIn: false , pokemon: loadStateFromCookie('app.pokemon' , { orderBy: 'recent' }), luckyegg: { orderBy: 'evolutions' } };
+
+function getInitialState()
+{
+	return Object.assign({} , initialState , loadStateFromCookie());
+}
+
+function app(state = getInitialState() , action) {
 	switch (action.type) {
 		
 		case types.LOGIN_SUCCESS:

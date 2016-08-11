@@ -10,7 +10,7 @@ import Type from './Type';
 import Perfectness from './Perfectness';
 import { Row } from 'react-bootstrap'
 
-import { getLevelByCPMultiplier , getSkillsByPokemon , getPokemonDefById } from './utils'
+import { getLevelByCPMultiplier , getSkillsByPokemon , getPokemonDefById } from './../../../utils'
 
 
 

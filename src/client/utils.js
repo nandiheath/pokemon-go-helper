@@ -1,5 +1,6 @@
 import pokemons from './pokemons.json'
 import skills from './skills.json'
+import cookie from 'react-cookie'
 
 const LEVELS = [ 0.094     ,  0.16639787,  0.21573247,  0.25572005,  0.29024988,
     0.3210876 ,  0.34921268,  0.37523559,  0.39956728,  0.42250001,
@@ -55,14 +56,19 @@ export function getSkillDefByName(name)
 
 function createSkillObject(pokemonDef ,pokemon , skillname)
 {
+
     var object = Object.assign({} , getSkillDefByName(skillname));
     object.learnt = false;
 
     // Get the STAB
     object.stab = pokemonDef.types.indexOf(object.type) >= 0;
-
-    if (pokemon.move_1_name.replace("_FAST" , '').replace("_" , '').toLowerCase().replace(/\s/ , '') === skillname ||
-        pokemon.move_2_name.replace("_FAST" , '').replace("_" , '').toLowerCase().replace(/\s/ , '') === skillname)
+    // Debug the Pinsir bug
+    if (pokemon.move_2_name.indexOf("cissor") > 0)
+    {
+        console.log(pokemon.move_2_name);
+    }
+    if (pokemon.move_1_name.replace("_FAST" , '').toLowerCase().replace(/[\s_]/g , '') === skillname ||
+        pokemon.move_2_name.replace("_FAST" , '').toLowerCase().replace(/[\s_]/g , '') === skillname)
     {
         object.learnt = true;
     }
@@ -88,7 +94,7 @@ export function getSkillsByPokemon(pokemon)
 }
 
 function sort(a , b){
-    return getDPS(a) < getDPS(b)
+    return getDPS(b) - getDPS(a)
 }
 
 function getDPS(skill)
@@ -97,10 +103,32 @@ function getDPS(skill)
 }
 
 
+export function isMobile()
+{
+    return getScreenSize().width < 500;
+}
+
 function getScreenSize()
 {
     return {
         width :  screen.width,
         height : screen.height
     }
+}
+
+
+
+export function loadStateFromCookie(key , defaultValue)
+{
+    var state = cookie.load(key);
+    if (state === undefined)
+    {
+        return defaultValue;
+    }
+    return state;
+}
+
+export function saveStateToCookie(key , value)
+{
+    cookie.save(key , JSON.stringify(value) , { path: '/' });
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { OverlayTrigger , Tooltip }  from  'react-bootstrap';
-
+import { isMobile } from './../../../utils'
 
 class Type extends React.Component {
     constructor(props) {
@@ -24,9 +24,13 @@ class Type extends React.Component {
             <div>
                 {
                     types.map( type =>
-                    <OverlayTrigger key={"type_" + type} placement="top" overlay={<Tooltip id="tooltip">{type.toUpperCase()}</Tooltip>}>
-                        <img style={style} alt={type}  src={"/assets/" + type + ".png"} />
-                    </OverlayTrigger>
+
+                        isMobile() ? '' :
+                            <OverlayTrigger key={"type_" + type} trigger={['hover', 'focus']} placement="top" overlay={<Tooltip id="tooltip">{type.toUpperCase()}</Tooltip>}>
+                                <img style={style} alt={type}  src={"/assets/" + type + ".png"} />
+                            </OverlayTrigger>
+
+
                     )
                 }
             </div>
