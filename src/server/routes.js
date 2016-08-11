@@ -55,6 +55,17 @@ var routes = [
 	},
 	{
 		method: 'GET',
+		path: '/assets/{param*}',
+		handler: {
+			directory: {
+				path: appRoot + '/src/client/public/assets',
+				listing: false,
+				index: true
+			}
+		}
+	},
+	{
+		method: 'GET',
 		path: '/{path*}',
 		handler: (request, reply) => {
 			reply.file(appRoot + '/src/client/public/index.html');	

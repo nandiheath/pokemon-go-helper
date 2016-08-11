@@ -9,7 +9,7 @@ class Perfectness extends React.Component {
 
 	render() {
 		const {
-			props: { individual_attack, individual_defense, individual_stamina } 
+			props: { individual_attack, individual_defense, individual_stamina , cp}
 		} = this;
 
 		const maxPower = 45;
@@ -18,9 +18,9 @@ class Perfectness extends React.Component {
 		return(
 			<div className="perfectness">
 				
-					<span className="perfectness-group">	
+					<span className="perfectness-group">
+						<span className="perfectness-cp-text">{cp}</span>
 						<span className="perfectness-group-text">{perfectLevel}%</span>
-						<span className="perfectness-group-label">Perfect</span>
 					</span>
 			</div>	
 		);			

@@ -47,13 +47,13 @@ export function login(auth,lat,lnd,alt) {
 	}
 }
 
-export function fetchInventory(lat,lng){
+export function fetchInventory(debug){
 	return function(dispatch) {
 
 		dispatch(startRequest());
 
 		// make request
-		return fetch('/api/player/inventory',
+		return fetch('/api/player/inventory' + (debug ? '?debug=true' : ''),
 			{
 				method: 'GET',
 				headers: {

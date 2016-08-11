@@ -5,6 +5,9 @@ import { Provider } from 'react-redux';
 
 import makeStore from './store';
 
+import './index.css';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+
 import App from './containers/App';
 import Login from './containers/Login';
 import Pokemon from './containers/Pokemon';
@@ -20,6 +23,7 @@ const routes = <Route path="/" component={App}>
 	<Route path="/luckyegg" component={LuckyEgg} />
 	<Route path="/pokemon" component={Pokemon} />
 </Route>
+
 
 // render
 ReactDOM.render(

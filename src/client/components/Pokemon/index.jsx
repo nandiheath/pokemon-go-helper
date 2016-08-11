@@ -3,8 +3,9 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { browserHistory } from 'react-router';
 
 import Detail from './Detail';
+import Summary from './Detail/Summary'
 import OrderBy from '../../containers/OrderBy';
-
+import { Modal } from 'react-bootstrap'
 
 class Pokemon extends React.Component {
 	constructor(props) {
@@ -13,13 +14,16 @@ class Pokemon extends React.Component {
 
 		//binds
 		this.orderBy = this.orderBy.bind(this);
+
+		this.state = {
+			selectedPokemon : null
+		};
 	}
 
 	componentWillMount() {
 
-
-		this.props.fetchInventory().
-		then(() => {
+		this.props.fetchInventory(this.props.location.query.debug)
+		.then(() => {
 
 			})
 		.catch((e) => {
@@ -29,16 +33,42 @@ class Pokemon extends React.Component {
 		});
 	}
 
+	onModelClosed(){
+		this.setState({
+			selectedPokemon : null
+		})
+	}
+
+	onPokemonSelected(pokemon){
+		this.setState({
+			selectedPokemon : pokemon
+		})
+	}
+
 	render() {
 		const {
 			props: { options, pokemon, pokedex, proto } 
 		} = this;
-		
+
+		const {
+			state : {selectedPokemon}
+		} = this;
 		// sort 
 		const sortedPokemon = this.orderBy(pokemon, options.orderBy); 		
 		
 		return(
 			<div className="pokemon">
+				<Modal show={selectedPokemon != null} onHide={this.onModelClosed.bind(this)}>
+					<Modal.Body>
+						{
+							selectedPokemon != null ?
+								<Summary
+									pokemon={selectedPokemon}
+								/> : ''
+						}
+
+					</Modal.Body>
+				</Modal>
 				{sortedPokemon.map(aPokemon => {
 
 					// get missing pokemon details	
@@ -53,6 +83,7 @@ class Pokemon extends React.Component {
 						<Detail
 							key={(aPokemon.id.low+aPokemon.id.low)}
 							pokemon={aPokemon}
+							onPokemonSelected={this.onPokemonSelected.bind(this)}
 						/>
 					);			
 				})}

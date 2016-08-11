@@ -1,0 +1,3674 @@
+[
+    {
+        "name": "Bulbasaur",
+        "id": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "90",
+            "Attack": "126",
+            "Defense": "126",
+            "Max CP": "1071",
+            "Catch Rate": "16%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "tackle",
+            "vinewhip"
+        ],
+        "special_skills": [
+            "sludgebomb",
+            "seedbomb",
+            "powerwhip"
+        ]
+    },
+    {
+        "name": "Ivysaur",
+        "id": 2,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "156",
+            "Defense": "158",
+            "Max CP": "1632",
+            "Catch Rate": "8%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "razorleaf",
+            "vinewhip"
+        ],
+        "special_skills": [
+            "sludgebomb",
+            "solarbeam",
+            "powerwhip"
+        ]
+    },
+    {
+        "name": "Venusaur",
+        "id": 3,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "198",
+            "Defense": "200",
+            "Max CP": "2580",
+            "Catch Rate": "4%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "razorleaf",
+            "vinewhip"
+        ],
+        "special_skills": [
+            "sludgebomb",
+            "solarbeam",
+            "petalblizzard"
+        ]
+    },
+    {
+        "name": "Charmander",
+        "id": 4,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "78",
+            "Attack": "128",
+            "Defense": "108",
+            "Max CP": "955",
+            "Catch Rate": "16%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "scratch",
+            "ember"
+        ],
+        "special_skills": [
+            "flameburst",
+            "flamethrower",
+            "flamecharge"
+        ]
+    },
+    {
+        "name": "Charmeleon",
+        "id": 5,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "116",
+            "Attack": "160",
+            "Defense": "140",
+            "Max CP": "1557",
+            "Catch Rate": "8%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "scratch",
+            "ember"
+        ],
+        "special_skills": [
+            "flameburst",
+            "flamethrower",
+            "firepunch"
+        ]
+    },
+    {
+        "name": "Charizard",
+        "id": 6,
+        "types": [
+            "fire",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "156",
+            "Attack": "212",
+            "Defense": "182",
+            "Max CP": "2602",
+            "Catch Rate": "4%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "wingattack",
+            "ember"
+        ],
+        "special_skills": [
+            "dragonclaw",
+            "flamethrower",
+            "fireblast"
+        ]
+    },
+    {
+        "name": "Squirtle",
+        "id": 7,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "88",
+            "Attack": "112",
+            "Defense": "142",
+            "Max CP": "1008",
+            "Catch Rate": "16%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "tackle",
+            "bubble"
+        ],
+        "special_skills": [
+            "aquajet",
+            "aquatail",
+            "waterpulse"
+        ]
+    },
+    {
+        "name": "Wartortle",
+        "id": 8,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "118",
+            "Attack": "144",
+            "Defense": "176",
+            "Max CP": "1582",
+            "Catch Rate": "8%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "bite",
+            "watergun"
+        ],
+        "special_skills": [
+            "aquajet",
+            "hydropump",
+            "icebeam"
+        ]
+    },
+    {
+        "name": "Blastoise",
+        "id": 9,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "158",
+            "Attack": "186",
+            "Defense": "222",
+            "Max CP": "2542",
+            "Catch Rate": "4%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "bite",
+            "watergun"
+        ],
+        "special_skills": [
+            "icebeam",
+            "hydropump",
+            "flashcannon"
+        ]
+    },
+    {
+        "name": "Caterpie",
+        "id": 10,
+        "types": [
+            "bug"
+        ],
+        "info": {
+            "Hit Points": "90",
+            "Attack": "62",
+            "Defense": "66",
+            "Max CP": "443",
+            "Catch Rate": "40%",
+            "Flee Rate": "20%"
+        },
+        "normal_skills": [
+            "tackle",
+            "bugbite"
+        ],
+        "special_skills": [
+            "struggle"
+        ]
+    },
+    {
+        "name": "Metapod",
+        "id": 11,
+        "types": [
+            "bug"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "56",
+            "Defense": "86",
+            "Max CP": "477",
+            "Catch Rate": "20%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "tackle",
+            "bugbite"
+        ],
+        "special_skills": [
+            "struggle"
+        ]
+    },
+    {
+        "name": "Butterfree",
+        "id": 12,
+        "types": [
+            "bug",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "144",
+            "Defense": "144",
+            "Max CP": "1454",
+            "Catch Rate": "10%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "confusion",
+            "bugbite"
+        ],
+        "special_skills": [
+            "psychic",
+            "bugbuzz",
+            "signalbeam"
+        ]
+    },
+    {
+        "name": "Weedle",
+        "id": 13,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "68",
+            "Defense": "64",
+            "Max CP": "449",
+            "Catch Rate": "40%",
+            "Flee Rate": "20%"
+        },
+        "normal_skills": [
+            "bugbite",
+            "poisonsting"
+        ],
+        "special_skills": [
+            "struggle"
+        ]
+    },
+    {
+        "name": "Kakuna",
+        "id": 14,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "90",
+            "Attack": "62",
+            "Defense": "82",
+            "Max CP": "485",
+            "Catch Rate": "20%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "bugbite",
+            "poisonsting"
+        ],
+        "special_skills": [
+            "struggle"
+        ]
+    },
+    {
+        "name": "Beedrill",
+        "id": 15,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "144",
+            "Defense": "130",
+            "Max CP": "1439",
+            "Catch Rate": "10%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "bugbite",
+            "poisonjab"
+        ],
+        "special_skills": [
+            "aerialace",
+            "sludgebomb",
+            "x-scissor"
+        ]
+    },
+    {
+        "name": "Pidgey",
+        "id": 16,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "94",
+            "Defense": "90",
+            "Max CP": "679",
+            "Catch Rate": "40%",
+            "Flee Rate": "20%"
+        },
+        "normal_skills": [
+            "tackle",
+            "quickattack"
+        ],
+        "special_skills": [
+            "twister",
+            "aerialace",
+            "aircutter"
+        ]
+    },
+    {
+        "name": "Pidgeotto",
+        "id": 17,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "126",
+            "Attack": "126",
+            "Defense": "122",
+            "Max CP": "1223",
+            "Catch Rate": "20%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "wingattack",
+            "steelwing"
+        ],
+        "special_skills": [
+            "twister",
+            "aerialace",
+            "aircutter"
+        ]
+    },
+    {
+        "name": "Pidgeot",
+        "id": 18,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "166",
+            "Attack": "170",
+            "Defense": "166",
+            "Max CP": "2091",
+            "Catch Rate": "10%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "wingattack",
+            "steelwing"
+        ],
+        "special_skills": [
+            "hurricane",
+            "aerialace",
+            "aircutter"
+        ]
+    },
+    {
+        "name": "Rattata",
+        "id": 19,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "60",
+            "Attack": "92",
+            "Defense": "86",
+            "Max CP": "581",
+            "Catch Rate": "40%",
+            "Flee Rate": "20%"
+        },
+        "normal_skills": [
+            "tackle",
+            "quickattack"
+        ],
+        "special_skills": [
+            "dig",
+            "hyperfang",
+            "bodyslam"
+        ]
+    },
+    {
+        "name": "Raticate",
+        "id": 20,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "110",
+            "Attack": "146",
+            "Defense": "150",
+            "Max CP": "1444",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "bite",
+            "quickattack"
+        ],
+        "special_skills": [
+            "dig",
+            "hyperfang",
+            "hyperbeam"
+        ]
+    },
+    {
+        "name": "Spearow",
+        "id": 21,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "102",
+            "Defense": "78",
+            "Max CP": "686",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "quickattack",
+            "peck"
+        ],
+        "special_skills": [
+            "aerialace",
+            "twister",
+            "drillpeck"
+        ]
+    },
+    {
+        "name": "Fearow",
+        "id": 22,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "168",
+            "Defense": "146",
+            "Max CP": "1746",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "steelwing",
+            "peck"
+        ],
+        "special_skills": [
+            "aerialace",
+            "twister",
+            "drillrun"
+        ]
+    },
+    {
+        "name": "Ekans",
+        "id": 23,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "70",
+            "Attack": "112",
+            "Defense": "112",
+            "Max CP": "824",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "acid",
+            "poisonsting"
+        ],
+        "special_skills": [
+            "gunkshot",
+            "sludgebomb",
+            "wrap"
+        ]
+    },
+    {
+        "name": "Arbok",
+        "id": 24,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "166",
+            "Defense": "166",
+            "Max CP": "1767",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "acid",
+            "bite"
+        ],
+        "special_skills": [
+            "gunkshot",
+            "sludgewave",
+            "darkpulse"
+        ]
+    },
+    {
+        "name": "Pikachu",
+        "id": 25,
+        "types": [
+            "electric"
+        ],
+        "info": {
+            "Hit Points": "70",
+            "Attack": "124",
+            "Defense": "108",
+            "Max CP": "887",
+            "Catch Rate": "16%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "thundershock",
+            "quickattack"
+        ],
+        "special_skills": [
+            "thunderbolt",
+            "discharge",
+            "thunder"
+        ]
+    },
+    {
+        "name": "Raichu",
+        "id": 26,
+        "types": [
+            "electric"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "200",
+            "Defense": "154",
+            "Max CP": "2028",
+            "Catch Rate": "8%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "thundershock",
+            "spark"
+        ],
+        "special_skills": [
+            "brickbreak",
+            "thunderpunch",
+            "thunder"
+        ]
+    },
+    {
+        "name": "Sandshrew",
+        "id": 27,
+        "types": [
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "90",
+            "Defense": "114",
+            "Max CP": "798",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "scratch",
+            "mudshot"
+        ],
+        "special_skills": [
+            "dig",
+            "rockslide",
+            "rocktomb"
+        ]
+    },
+    {
+        "name": "Sandslash",
+        "id": 28,
+        "types": [
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "150",
+            "Attack": "150",
+            "Defense": "172",
+            "Max CP": "1810",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "metalclaw",
+            "mudshot"
+        ],
+        "special_skills": [
+            "rocktomb",
+            "bulldoze",
+            "earthquake"
+        ]
+    },
+    {
+        "name": "Nidoran♀",
+        "id": 29,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "110",
+            "Attack": "100",
+            "Defense": "104",
+            "Max CP": "876",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "poisonsting",
+            "bite"
+        ],
+        "special_skills": [
+            "poisonfang",
+            "sludgebomb",
+            "bodyslam"
+        ]
+    },
+    {
+        "name": "Nidorina",
+        "id": 30,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "140",
+            "Attack": "132",
+            "Defense": "136",
+            "Max CP": "1404",
+            "Catch Rate": "20%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "poisonsting",
+            "bite"
+        ],
+        "special_skills": [
+            "poisonfang",
+            "sludgebomb",
+            "dig"
+        ]
+    },
+    {
+        "name": "Nidoqueen",
+        "id": 31,
+        "types": [
+            "poison",
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "184",
+            "Defense": "190",
+            "Max CP": "2485",
+            "Catch Rate": "10%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "poisonjab",
+            "bite"
+        ],
+        "special_skills": [
+            "stoneedge",
+            "sludgewave",
+            "earthquake"
+        ]
+    },
+    {
+        "name": "Nidoran♂",
+        "id": 32,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "92",
+            "Attack": "110",
+            "Defense": "94",
+            "Max CP": "843",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "poisonsting",
+            "peck"
+        ],
+        "special_skills": [
+            "hornattack",
+            "bodyslam",
+            "sludgebomb"
+        ]
+    },
+    {
+        "name": "Nidorino",
+        "id": 33,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "122",
+            "Attack": "142",
+            "Defense": "128",
+            "Max CP": "1372",
+            "Catch Rate": "20%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "poisonjab",
+            "bite"
+        ],
+        "special_skills": [
+            "hornattack",
+            "dig",
+            "sludgebomb"
+        ]
+    },
+    {
+        "name": "Nidoking",
+        "id": 34,
+        "types": [
+            "poison",
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "162",
+            "Attack": "204",
+            "Defense": "170",
+            "Max CP": "2475",
+            "Catch Rate": "10%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "poisonjab",
+            "furycutter"
+        ],
+        "special_skills": [
+            "megahorn",
+            "earthquake",
+            "sludgewave"
+        ]
+    },
+    {
+        "name": "Clefairy",
+        "id": 35,
+        "types": [
+            "fairy"
+        ],
+        "info": {
+            "Hit Points": "140",
+            "Attack": "116",
+            "Defense": "124",
+            "Max CP": "1200",
+            "Catch Rate": "24%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "zenheadbutt",
+            "pound"
+        ],
+        "special_skills": [
+            "bodyslam",
+            "disarmingvoice",
+            "moonblast"
+        ]
+    },
+    {
+        "name": "Clefable",
+        "id": 36,
+        "types": [
+            "fairy"
+        ],
+        "info": {
+            "Hit Points": "190",
+            "Attack": "178",
+            "Defense": "178",
+            "Max CP": "2397",
+            "Catch Rate": "8%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "zenheadbutt",
+            "pound"
+        ],
+        "special_skills": [
+            "psychic",
+            "dazzlinggleam",
+            "moonblast"
+        ]
+    },
+    {
+        "name": "Vulpix",
+        "id": 37,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "76",
+            "Attack": "106",
+            "Defense": "118",
+            "Max CP": "831",
+            "Catch Rate": "24%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "quickattack",
+            "ember"
+        ],
+        "special_skills": [
+            "flamethrower",
+            "bodyslam",
+            "flamecharge"
+        ]
+    },
+    {
+        "name": "Ninetales",
+        "id": 38,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "146",
+            "Attack": "176",
+            "Defense": "194",
+            "Max CP": "2188",
+            "Catch Rate": "8%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "feintattack",
+            "ember"
+        ],
+        "special_skills": [
+            "heatwave",
+            "fireblast",
+            "flamethrower"
+        ]
+    },
+    {
+        "name": "Jigglypuff",
+        "id": 39,
+        "types": [
+            "normal",
+            "fairy"
+        ],
+        "info": {
+            "Hit Points": "230",
+            "Attack": "98",
+            "Defense": "54",
+            "Max CP": "917",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "feintattack",
+            "pound"
+        ],
+        "special_skills": [
+            "disarmingvoice",
+            "bodyslam",
+            "playrough"
+        ]
+    },
+    {
+        "name": "Wigglytuff",
+        "id": 40,
+        "types": [
+            "normal",
+            "fairy"
+        ],
+        "info": {
+            "Hit Points": "280",
+            "Attack": "168",
+            "Defense": "108",
+            "Max CP": "2177",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "feintattack",
+            "pound"
+        ],
+        "special_skills": [
+            "dazzlinggleam",
+            "hyperbeam",
+            "playrough"
+        ]
+    },
+    {
+        "name": "Zubat",
+        "id": 41,
+        "types": [
+            "poison",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "88",
+            "Defense": "90",
+            "Max CP": "642",
+            "Catch Rate": "40%",
+            "Flee Rate": "20%"
+        },
+        "normal_skills": [
+            "bite",
+            "quickattack"
+        ],
+        "special_skills": [
+            "sludgebomb",
+            "poisonfang",
+            "aircutter"
+        ]
+    },
+    {
+        "name": "Golbat",
+        "id": 42,
+        "types": [
+            "poison",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "150",
+            "Attack": "164",
+            "Defense": "164",
+            "Max CP": "1921",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "bite",
+            "wingattack"
+        ],
+        "special_skills": [
+            "ominouswind",
+            "poisonfang",
+            "aircutter"
+        ]
+    },
+    {
+        "name": "Oddish",
+        "id": 43,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "90",
+            "Attack": "134",
+            "Defense": "130",
+            "Max CP": "1148",
+            "Catch Rate": "48%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "razorleaf",
+            "acid"
+        ],
+        "special_skills": [
+            "moonblast",
+            "seedbomb",
+            "sludgebomb"
+        ]
+    },
+    {
+        "name": "Gloom",
+        "id": 44,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "162",
+            "Defense": "158",
+            "Max CP": "1689",
+            "Catch Rate": "24%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "razorleaf",
+            "acid"
+        ],
+        "special_skills": [
+            "moonblast",
+            "petalblizzard",
+            "sludgebomb"
+        ]
+    },
+    {
+        "name": "Vileplume",
+        "id": 45,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "150",
+            "Attack": "202",
+            "Defense": "190",
+            "Max CP": "2492",
+            "Catch Rate": "12%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "razorleaf",
+            "acid"
+        ],
+        "special_skills": [
+            "moonblast",
+            "petalblizzard",
+            "solarbeam"
+        ]
+    },
+    {
+        "name": "Paras",
+        "id": 46,
+        "types": [
+            "bug",
+            "grass"
+        ],
+        "info": {
+            "Hit Points": "70",
+            "Attack": "122",
+            "Defense": "120",
+            "Max CP": "916",
+            "Catch Rate": "32%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "bugbite",
+            "scratch"
+        ],
+        "special_skills": [
+            "seedbomb",
+            "x-scissor",
+            "crosspoison"
+        ]
+    },
+    {
+        "name": "Parasect",
+        "id": 47,
+        "types": [
+            "bug",
+            "grass"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "162",
+            "Defense": "170",
+            "Max CP": "1747",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "bugbite",
+            "furycutter"
+        ],
+        "special_skills": [
+            "solarbeam",
+            "x-scissor",
+            "crosspoison"
+        ]
+    },
+    {
+        "name": "Venonat",
+        "id": 48,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "108",
+            "Defense": "118",
+            "Max CP": "1029",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "confusion",
+            "bugbite"
+        ],
+        "special_skills": [
+            "signalbeam",
+            "poisonfang",
+            "psybeam"
+        ]
+    },
+    {
+        "name": "Venomoth",
+        "id": 49,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "140",
+            "Attack": "172",
+            "Defense": "154",
+            "Max CP": "1890",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "confusion",
+            "bugbite"
+        ],
+        "special_skills": [
+            "bugbuzz",
+            "poisonfang",
+            "psychic"
+        ]
+    },
+    {
+        "name": "Diglett",
+        "id": 50,
+        "types": [
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "20",
+            "Attack": "108",
+            "Defense": "86",
+            "Max CP": "456",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "scratch",
+            "mudshot"
+        ],
+        "special_skills": [
+            "rocktomb",
+            "dig",
+            "mudbomb"
+        ]
+    },
+    {
+        "name": "Dugtrio",
+        "id": 51,
+        "types": [
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "70",
+            "Attack": "148",
+            "Defense": "140",
+            "Max CP": "1168",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "suckerpunch",
+            "mudshot"
+        ],
+        "special_skills": [
+            "stoneedge",
+            "earthquake",
+            "mudbomb"
+        ]
+    },
+    {
+        "name": "Meowth",
+        "id": 52,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "104",
+            "Defense": "94",
+            "Max CP": "756",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "scratch",
+            "bite"
+        ],
+        "special_skills": [
+            "darkpulse",
+            "nightslash",
+            "bodyslam"
+        ]
+    },
+    {
+        "name": "Persian",
+        "id": 53,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "156",
+            "Defense": "146",
+            "Max CP": "1631",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "scratch",
+            "feintattack"
+        ],
+        "special_skills": [
+            "playrough",
+            "powergem",
+            "nightslash"
+        ]
+    },
+    {
+        "name": "Psyduck",
+        "id": 54,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "132",
+            "Defense": "112",
+            "Max CP": "1109",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "zenheadbutt",
+            "watergun"
+        ],
+        "special_skills": [
+            "aquatail",
+            "crosschop",
+            "psybeam"
+        ]
+    },
+    {
+        "name": "Golduck",
+        "id": 55,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "194",
+            "Defense": "176",
+            "Max CP": "2386",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "confusion",
+            "watergun"
+        ],
+        "special_skills": [
+            "hydropump",
+            "icebeam",
+            "psychic"
+        ]
+    },
+    {
+        "name": "Mankey",
+        "id": 56,
+        "types": [
+            "fighting"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "112",
+            "Defense": "96",
+            "Max CP": "878",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "karatechop",
+            "scratch"
+        ],
+        "special_skills": [
+            "brickbreak",
+            "crosschop",
+            "lowsweep"
+        ]
+    },
+    {
+        "name": "Primeape",
+        "id": 57,
+        "types": [
+            "fighting"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "178",
+            "Defense": "150",
+            "Max CP": "1864",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "karatechop",
+            "lowkick"
+        ],
+        "special_skills": [
+            "nightslash",
+            "crosschop",
+            "lowsweep"
+        ]
+    },
+    {
+        "name": "Growlithe",
+        "id": 58,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "110",
+            "Attack": "156",
+            "Defense": "110",
+            "Max CP": "1335",
+            "Catch Rate": "24%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "ember",
+            "bite"
+        ],
+        "special_skills": [
+            "flamewheel",
+            "bodyslam",
+            "flamethrower"
+        ]
+    },
+    {
+        "name": "Arcanine",
+        "id": 59,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "230",
+            "Defense": "180",
+            "Max CP": "2983",
+            "Catch Rate": "8%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "firefang",
+            "bite"
+        ],
+        "special_skills": [
+            "fireblast",
+            "bulldoze",
+            "flamethrower"
+        ]
+    },
+    {
+        "name": "Poliwag",
+        "id": 60,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "108",
+            "Defense": "98",
+            "Max CP": "795",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "bubble",
+            "mudshot"
+        ],
+        "special_skills": [
+            "bodyslam",
+            "bubblebeam",
+            "mudbomb"
+        ]
+    },
+    {
+        "name": "Poliwhirl",
+        "id": 61,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "132",
+            "Defense": "132",
+            "Max CP": "1340",
+            "Catch Rate": "20%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "bubble",
+            "mudshot"
+        ],
+        "special_skills": [
+            "scald",
+            "bubblebeam",
+            "mudbomb"
+        ]
+    },
+    {
+        "name": "Poliwrath",
+        "id": 62,
+        "types": [
+            "water",
+            "fighting"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "180",
+            "Defense": "202",
+            "Max CP": "2505",
+            "Catch Rate": "10%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "bubble",
+            "mudshot"
+        ],
+        "special_skills": [
+            "icepunch",
+            "hydropump",
+            "submission"
+        ]
+    },
+    {
+        "name": "Abra",
+        "id": 63,
+        "types": [
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "50",
+            "Attack": "110",
+            "Defense": "76",
+            "Max CP": "600",
+            "Catch Rate": "40%",
+            "Flee Rate": "99%"
+        },
+        "normal_skills": [
+            "zenheadbutt"
+        ],
+        "special_skills": [
+            "shadowball",
+            "signalbeam",
+            "psyshock"
+        ]
+    },
+    {
+        "name": "Kadabra",
+        "id": 64,
+        "types": [
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "150",
+            "Defense": "112",
+            "Max CP": "1131",
+            "Catch Rate": "20%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "confusion",
+            "psychocut"
+        ],
+        "special_skills": [
+            "shadowball",
+            "dazzlinggleam",
+            "psybeam"
+        ]
+    },
+    {
+        "name": "Alakazam",
+        "id": 65,
+        "types": [
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "110",
+            "Attack": "186",
+            "Defense": "152",
+            "Max CP": "1813",
+            "Catch Rate": "10%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "confusion",
+            "psychocut"
+        ],
+        "special_skills": [
+            "shadowball",
+            "dazzlinggleam",
+            "psychic"
+        ]
+    },
+    {
+        "name": "Machop",
+        "id": 66,
+        "types": [
+            "fighting"
+        ],
+        "info": {
+            "Hit Points": "140",
+            "Attack": "118",
+            "Defense": "96",
+            "Max CP": "1089",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "lowkick",
+            "karatechop"
+        ],
+        "special_skills": [
+            "brickbreak",
+            "crosschop",
+            "lowsweep"
+        ]
+    },
+    {
+        "name": "Machoke",
+        "id": 67,
+        "types": [
+            "fighting"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "154",
+            "Defense": "144",
+            "Max CP": "1760",
+            "Catch Rate": "20%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "lowkick",
+            "karatechop"
+        ],
+        "special_skills": [
+            "brickbreak",
+            "crosschop",
+            "submission"
+        ]
+    },
+    {
+        "name": "Machamp",
+        "id": 68,
+        "types": [
+            "fighting"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "198",
+            "Defense": "180",
+            "Max CP": "2594",
+            "Catch Rate": "10%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "bulletpunch",
+            "karatechop"
+        ],
+        "special_skills": [
+            "stoneedge",
+            "crosschop",
+            "submission"
+        ]
+    },
+    {
+        "name": "Bellsprout",
+        "id": 69,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "158",
+            "Defense": "78",
+            "Max CP": "1117",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "acid",
+            "vinewhip"
+        ],
+        "special_skills": [
+            "sludgebomb",
+            "powerwhip",
+            "wrap"
+        ]
+    },
+    {
+        "name": "Weepinbell",
+        "id": 70,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "190",
+            "Defense": "110",
+            "Max CP": "1723",
+            "Catch Rate": "20%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "acid",
+            "razorleaf"
+        ],
+        "special_skills": [
+            "sludgebomb",
+            "powerwhip",
+            "seedbomb"
+        ]
+    },
+    {
+        "name": "Victreebel",
+        "id": 71,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "222",
+            "Defense": "152",
+            "Max CP": "2530",
+            "Catch Rate": "10%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "acid",
+            "razorleaf"
+        ],
+        "special_skills": [
+            "sludgebomb",
+            "leafblade",
+            "solarbeam"
+        ]
+    },
+    {
+        "name": "Tentacool",
+        "id": 72,
+        "types": [
+            "water",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "106",
+            "Defense": "136",
+            "Max CP": "905",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "bubble",
+            "poisonsting"
+        ],
+        "special_skills": [
+            "bubblebeam",
+            "waterpulse",
+            "wrap"
+        ]
+    },
+    {
+        "name": "Tentacruel",
+        "id": 73,
+        "types": [
+            "water",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "170",
+            "Defense": "196",
+            "Max CP": "2220",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "acid",
+            "poisonjab"
+        ],
+        "special_skills": [
+            "blizzard",
+            "hydropump",
+            "sludgewave"
+        ]
+    },
+    {
+        "name": "Geodude",
+        "id": 74,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "106",
+            "Defense": "118",
+            "Max CP": "849",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "rockthrow",
+            "tackle"
+        ],
+        "special_skills": [
+            "rockslide",
+            "dig",
+            "rocktomb"
+        ]
+    },
+    {
+        "name": "Graveler",
+        "id": 75,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "110",
+            "Attack": "142",
+            "Defense": "156",
+            "Max CP": "1433",
+            "Catch Rate": "20%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "rockthrow",
+            "mudshot"
+        ],
+        "special_skills": [
+            "rockslide",
+            "dig",
+            "stoneedge"
+        ]
+    },
+    {
+        "name": "Golem",
+        "id": 76,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "176",
+            "Defense": "198",
+            "Max CP": "2303",
+            "Catch Rate": "10%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "rockthrow",
+            "mudshot"
+        ],
+        "special_skills": [
+            "ancientpower",
+            "earthquake",
+            "stoneedge"
+        ]
+    },
+    {
+        "name": "Ponyta",
+        "id": 77,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "168",
+            "Defense": "138",
+            "Max CP": "1516",
+            "Catch Rate": "32%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "tackle",
+            "ember"
+        ],
+        "special_skills": [
+            "flamewheel",
+            "fireblast",
+            "flamecharge"
+        ]
+    },
+    {
+        "name": "Rapidash",
+        "id": 78,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "200",
+            "Defense": "170",
+            "Max CP": "2199",
+            "Catch Rate": "12%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "lowkick",
+            "ember"
+        ],
+        "special_skills": [
+            "heatwave",
+            "fireblast",
+            "drillrun"
+        ]
+    },
+    {
+        "name": "Slowpoke",
+        "id": 79,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "110",
+            "Defense": "110",
+            "Max CP": "1218",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "watergun",
+            "confusion"
+        ],
+        "special_skills": [
+            "psychic",
+            "waterpulse",
+            "psyshock"
+        ]
+    },
+    {
+        "name": "Slowbro",
+        "id": 80,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "190",
+            "Attack": "184",
+            "Defense": "198",
+            "Max CP": "2597",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "watergun",
+            "confusion"
+        ],
+        "special_skills": [
+            "psychic",
+            "waterpulse",
+            "icebeam"
+        ]
+    },
+    {
+        "name": "Magnemite",
+        "id": 81,
+        "types": [
+            "electric",
+            "steel"
+        ],
+        "info": {
+            "Hit Points": "50",
+            "Attack": "128",
+            "Defense": "138",
+            "Max CP": "890",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "spark",
+            "thundershock"
+        ],
+        "special_skills": [
+            "magnetbomb",
+            "discharge",
+            "thunderbolt"
+        ]
+    },
+    {
+        "name": "Magneton",
+        "id": 82,
+        "types": [
+            "electric",
+            "steel"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "186",
+            "Defense": "180",
+            "Max CP": "1879",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "spark",
+            "thundershock"
+        ],
+        "special_skills": [
+            "magnetbomb",
+            "discharge",
+            "flashcannon"
+        ]
+    },
+    {
+        "name": "Farfetch'd",
+        "id": 83,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "104",
+            "Attack": "138",
+            "Defense": "132",
+            "Max CP": "1263",
+            "Catch Rate": "24%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "furycutter",
+            "cut"
+        ],
+        "special_skills": [
+            "aircutter",
+            "aerialace",
+            "leafblade"
+        ]
+    },
+    {
+        "name": "Doduo",
+        "id": 84,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "70",
+            "Attack": "126",
+            "Defense": "96",
+            "Max CP": "855",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "peck",
+            "quickattack"
+        ],
+        "special_skills": [
+            "swift",
+            "aerialace",
+            "drillpeck"
+        ]
+    },
+    {
+        "name": "Dodrio",
+        "id": 85,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "182",
+            "Defense": "150",
+            "Max CP": "1836",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "steelwing",
+            "feintattack"
+        ],
+        "special_skills": [
+            "drillpeck",
+            "aerialace",
+            "aircutter"
+        ]
+    },
+    {
+        "name": "Seel",
+        "id": 86,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "104",
+            "Defense": "138",
+            "Max CP": "1107",
+            "Catch Rate": "40%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "watergun",
+            "iceshard"
+        ],
+        "special_skills": [
+            "aquajet",
+            "icywind",
+            "aquatail"
+        ]
+    },
+    {
+        "name": "Dewgong",
+        "id": 87,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "156",
+            "Defense": "192",
+            "Max CP": "2145",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "frostbreath",
+            "iceshard"
+        ],
+        "special_skills": [
+            "aquajet",
+            "icywind",
+            "blizzard"
+        ]
+    },
+    {
+        "name": "Grimer",
+        "id": 88,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "124",
+            "Defense": "110",
+            "Max CP": "1284",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "mudslap",
+            "acid"
+        ],
+        "special_skills": [
+            "sludge",
+            "sludgebomb",
+            "mudbomb"
+        ]
+    },
+    {
+        "name": "Muk",
+        "id": 89,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "210",
+            "Attack": "180",
+            "Defense": "188",
+            "Max CP": "2602",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "poisonjab",
+            "acid"
+        ],
+        "special_skills": [
+            "sludgewave",
+            "sludgebomb",
+            "darkpulse"
+        ]
+    },
+    {
+        "name": "Shellder",
+        "id": 90,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "60",
+            "Attack": "120",
+            "Defense": "112",
+            "Max CP": "822",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "iceshard",
+            "tackle"
+        ],
+        "special_skills": [
+            "icywind",
+            "waterpulse",
+            "bubblebeam"
+        ]
+    },
+    {
+        "name": "Cloyster",
+        "id": 91,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "196",
+            "Defense": "196",
+            "Max CP": "2052",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "iceshard",
+            "frostbreath"
+        ],
+        "special_skills": [
+            "icywind",
+            "blizzard",
+            "hydropump"
+        ]
+    },
+    {
+        "name": "Gastly",
+        "id": 92,
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "60",
+            "Attack": "136",
+            "Defense": "82",
+            "Max CP": "804",
+            "Catch Rate": "32%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "lick",
+            "suckerpunch"
+        ],
+        "special_skills": [
+            "darkpulse",
+            "sludgebomb",
+            "ominouswind"
+        ]
+    },
+    {
+        "name": "Haunter",
+        "id": 93,
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "90",
+            "Attack": "172",
+            "Defense": "118",
+            "Max CP": "1380",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "lick",
+            "shadowclaw"
+        ],
+        "special_skills": [
+            "darkpulse",
+            "sludgebomb",
+            "shadowball"
+        ]
+    },
+    {
+        "name": "Gengar",
+        "id": 94,
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "204",
+            "Defense": "156",
+            "Max CP": "2078",
+            "Catch Rate": "8%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "shadowclaw",
+            "suckerpunch"
+        ],
+        "special_skills": [
+            "darkpulse",
+            "sludgewave",
+            "shadowball"
+        ]
+    },
+    {
+        "name": "Onix",
+        "id": 95,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "70",
+            "Attack": "90",
+            "Defense": "186",
+            "Max CP": "857",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "rockthrow",
+            "tackle"
+        ],
+        "special_skills": [
+            "rockslide",
+            "stoneedge",
+            "ironhead"
+        ]
+    },
+    {
+        "name": "Drowzee",
+        "id": 96,
+        "types": [
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "104",
+            "Defense": "140",
+            "Max CP": "1075",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "pound",
+            "confusion"
+        ],
+        "special_skills": [
+            "psychic",
+            "psyshock",
+            "psybeam"
+        ]
+    },
+    {
+        "name": "Hypno",
+        "id": 97,
+        "types": [
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "170",
+            "Attack": "162",
+            "Defense": "196",
+            "Max CP": "2184",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "zenheadbutt",
+            "confusion"
+        ],
+        "special_skills": [
+            "psychic",
+            "psyshock",
+            "shadowball"
+        ]
+    },
+    {
+        "name": "Krabby",
+        "id": 98,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "60",
+            "Attack": "116",
+            "Defense": "110",
+            "Max CP": "792",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "bubble",
+            "mudshot"
+        ],
+        "special_skills": [
+            "vicegrip",
+            "waterpulse",
+            "bubblebeam"
+        ]
+    },
+    {
+        "name": "Kingler",
+        "id": 99,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "110",
+            "Attack": "178",
+            "Defense": "168",
+            "Max CP": "1823",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "metalclaw",
+            "mudshot"
+        ],
+        "special_skills": [
+            "vicegrip",
+            "waterpulse",
+            "x-scissor"
+        ]
+    },
+    {
+        "name": "Voltorb",
+        "id": 100,
+        "types": [
+            "electric"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "102",
+            "Defense": "124",
+            "Max CP": "839",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "tackle",
+            "spark"
+        ],
+        "special_skills": [
+            "thunderbolt",
+            "discharge",
+            "signalbeam"
+        ]
+    },
+    {
+        "name": "Electrode",
+        "id": 101,
+        "types": [
+            "electric"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "150",
+            "Defense": "174",
+            "Max CP": "1646",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "tackle",
+            "spark"
+        ],
+        "special_skills": [
+            "thunderbolt",
+            "discharge",
+            "hyperbeam"
+        ]
+    },
+    {
+        "name": "Exeggcute",
+        "id": 102,
+        "types": [
+            "grass",
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "110",
+            "Defense": "132",
+            "Max CP": "1099",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "confusion"
+        ],
+        "special_skills": [
+            "psychic",
+            "seedbomb",
+            "ancientpower"
+        ]
+    },
+    {
+        "name": "Exeggutor",
+        "id": 103,
+        "types": [
+            "grass",
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "190",
+            "Attack": "232",
+            "Defense": "164",
+            "Max CP": "2955",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "confusion",
+            "zenheadbutt"
+        ],
+        "special_skills": [
+            "psychic",
+            "seedbomb",
+            "solarbeam"
+        ]
+    },
+    {
+        "name": "Cubone",
+        "id": 104,
+        "types": [
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "102",
+            "Defense": "150",
+            "Max CP": "1006",
+            "Catch Rate": "32%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "rocksmash",
+            "mudslap"
+        ],
+        "special_skills": [
+            "boneclub",
+            "dig",
+            "bulldoze"
+        ]
+    },
+    {
+        "name": "Marowak",
+        "id": 105,
+        "types": [
+            "ground"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "140",
+            "Defense": "202",
+            "Max CP": "1656",
+            "Catch Rate": "12%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "rocksmash",
+            "mudslap"
+        ],
+        "special_skills": [
+            "boneclub",
+            "dig",
+            "earthquake"
+        ]
+    },
+    {
+        "name": "Hitmonlee",
+        "id": 106,
+        "types": [
+            "fighting"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "148",
+            "Defense": "172",
+            "Max CP": "1492",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "lowkick",
+            "rocksmash"
+        ],
+        "special_skills": [
+            "lowsweep",
+            "stoneedge",
+            "stomp"
+        ]
+    },
+    {
+        "name": "Hitmonchan",
+        "id": 107,
+        "types": [
+            "fighting"
+        ],
+        "info": {
+            "Hit Points": "100",
+            "Attack": "138",
+            "Defense": "204",
+            "Max CP": "1516",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "bulletpunch",
+            "rocksmash"
+        ],
+        "special_skills": [
+            "firepunch",
+            "icepunch",
+            "thunderpunch",
+            "brickbreak"
+        ]
+    },
+    {
+        "name": "Lickitung",
+        "id": 108,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "126",
+            "Defense": "160",
+            "Max CP": "1626",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "lick",
+            "zenheadbutt"
+        ],
+        "special_skills": [
+            "hyperbeam",
+            "stomp",
+            "powerwhip"
+        ]
+    },
+    {
+        "name": "Koffing",
+        "id": 109,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "136",
+            "Defense": "142",
+            "Max CP": "1151",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "tackle",
+            "acid"
+        ],
+        "special_skills": [
+            "darkpulse",
+            "sludge",
+            "sludgebomb"
+        ]
+    },
+    {
+        "name": "Weezing",
+        "id": 110,
+        "types": [
+            "poison"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "190",
+            "Defense": "198",
+            "Max CP": "2250",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "tackle",
+            "acid"
+        ],
+        "special_skills": [
+            "darkpulse",
+            "shadowball",
+            "sludgebomb"
+        ]
+    },
+    {
+        "name": "Rhyhorn",
+        "id": 111,
+        "types": [
+            "ground",
+            "rock"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "110",
+            "Defense": "116",
+            "Max CP": "1182",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "rocksmash",
+            "mudslap"
+        ],
+        "special_skills": [
+            "bulldoze",
+            "stomp",
+            "hornattack"
+        ]
+    },
+    {
+        "name": "Rhydon",
+        "id": 112,
+        "types": [
+            "ground",
+            "rock"
+        ],
+        "info": {
+            "Hit Points": "210",
+            "Attack": "116",
+            "Defense": "160",
+            "Max CP": "2243",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "rocksmash",
+            "mudslap"
+        ],
+        "special_skills": [
+            "earthquake",
+            "stoneedge",
+            "megahorn"
+        ]
+    },
+    {
+        "name": "Chansey",
+        "id": 113,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "500",
+            "Attack": "40",
+            "Defense": "60",
+            "Max CP": "675",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "pound",
+            "zenheadbutt"
+        ],
+        "special_skills": [
+            "dazzlinggleam",
+            "psybeam",
+            "psychic"
+        ]
+    },
+    {
+        "name": "Tangela",
+        "id": 114,
+        "types": [
+            "grass"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "164",
+            "Defense": "152",
+            "Max CP": "1739",
+            "Catch Rate": "32%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "vinewhip"
+        ],
+        "special_skills": [
+            "sludgebomb",
+            "solarbeam",
+            "powerwhip"
+        ]
+    },
+    {
+        "name": "Kangaskhan",
+        "id": 115,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "210",
+            "Attack": "142",
+            "Defense": "178",
+            "Max CP": "2043",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "lowkick",
+            "mudslap"
+        ],
+        "special_skills": [
+            "earthquake",
+            "brickbreak",
+            "stomp"
+        ]
+    },
+    {
+        "name": "Horsea",
+        "id": 116,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "60",
+            "Attack": "122",
+            "Defense": "100",
+            "Max CP": "794",
+            "Catch Rate": "40%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "watergun",
+            "bubble"
+        ],
+        "special_skills": [
+            "bubblebeam",
+            "dragonpulse",
+            "flashcannon"
+        ]
+    },
+    {
+        "name": "Seadra",
+        "id": 117,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "110",
+            "Attack": "176",
+            "Defense": "150",
+            "Max CP": "1713",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "watergun",
+            "dragonbreath"
+        ],
+        "special_skills": [
+            "hydropump",
+            "dragonpulse",
+            "blizzard"
+        ]
+    },
+    {
+        "name": "Goldeen",
+        "id": 118,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "90",
+            "Attack": "112",
+            "Defense": "126",
+            "Max CP": "965",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "mudshot",
+            "peck"
+        ],
+        "special_skills": [
+            "aquatail",
+            "hornattack",
+            "waterpulse"
+        ]
+    },
+    {
+        "name": "Seaking",
+        "id": 119,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "172",
+            "Defense": "160",
+            "Max CP": "2043",
+            "Catch Rate": "16%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "poisonjab",
+            "peck"
+        ],
+        "special_skills": [
+            "drillrun",
+            "megahorn",
+            "icywind"
+        ]
+    },
+    {
+        "name": "Staryu",
+        "id": 120,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "60",
+            "Attack": "130",
+            "Defense": "128",
+            "Max CP": "937",
+            "Catch Rate": "40%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "watergun",
+            "quickattack"
+        ],
+        "special_skills": [
+            "bubblebeam",
+            "powergem",
+            "swift"
+        ]
+    },
+    {
+        "name": "Starmie",
+        "id": 121,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "194",
+            "Defense": "192",
+            "Max CP": "2182",
+            "Catch Rate": "16%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "watergun",
+            "quickattack"
+        ],
+        "special_skills": [
+            "hydropump",
+            "powergem",
+            "psybeam"
+        ]
+    },
+    {
+        "name": "Mr. Mime",
+        "id": 122,
+        "types": [
+            "psychic",
+            "fairy"
+        ],
+        "info": {
+            "Hit Points": "80",
+            "Attack": "154",
+            "Defense": "196",
+            "Max CP": "1494",
+            "Catch Rate": "24%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "confusion",
+            "zenheadbutt"
+        ],
+        "special_skills": [
+            "shadowball",
+            "psybeam",
+            "psychic"
+        ]
+    },
+    {
+        "name": "Scyther",
+        "id": 123,
+        "types": [
+            "bug",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "140",
+            "Attack": "176",
+            "Defense": "180",
+            "Max CP": "2073",
+            "Catch Rate": "24%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "steelwing",
+            "furycutter"
+        ],
+        "special_skills": [
+            "bugbuzz",
+            "x-scissor",
+            "nightslash"
+        ]
+    },
+    {
+        "name": "Jynx",
+        "id": 124,
+        "types": [
+            "ice",
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "172",
+            "Defense": "134",
+            "Max CP": "1716",
+            "Catch Rate": "24%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "pound",
+            "frostbreath"
+        ],
+        "special_skills": [
+            "psyshock",
+            "icepunch",
+            "drainingkiss"
+        ]
+    },
+    {
+        "name": "Electabuzz",
+        "id": 125,
+        "types": [
+            "electric"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "198",
+            "Defense": "160",
+            "Max CP": "2119",
+            "Catch Rate": "24%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "lowkick",
+            "thundershock"
+        ],
+        "special_skills": [
+            "thunderbolt",
+            "thunder",
+            "thunderpunch"
+        ]
+    },
+    {
+        "name": "Magmar",
+        "id": 126,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "214",
+            "Defense": "158",
+            "Max CP": "2265",
+            "Catch Rate": "24%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "karatechop",
+            "ember"
+        ],
+        "special_skills": [
+            "fireblast",
+            "flamethrower",
+            "firepunch"
+        ]
+    },
+    {
+        "name": "Pinsir",
+        "id": 127,
+        "types": [
+            "bug"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "184",
+            "Defense": "186",
+            "Max CP": "2121",
+            "Catch Rate": "24%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "furycutter",
+            "rocksmash"
+        ],
+        "special_skills": [
+            "submission",
+            "vicegrip",
+            "x-scissor"
+        ]
+    },
+    {
+        "name": "Tauros",
+        "id": 128,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "150",
+            "Attack": "148",
+            "Defense": "184",
+            "Max CP": "1844",
+            "Catch Rate": "24%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "tackle",
+            "zenheadbutt"
+        ],
+        "special_skills": [
+            "earthquake",
+            "ironhead",
+            "hornattack"
+        ]
+    },
+    {
+        "name": "Magikarp",
+        "id": 129,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "40",
+            "Attack": "42",
+            "Defense": "84",
+            "Max CP": "262",
+            "Catch Rate": "56%",
+            "Flee Rate": "15%"
+        },
+        "normal_skills": [
+            "splash"
+        ],
+        "special_skills": [
+            "struggle"
+        ]
+    },
+    {
+        "name": "Gyarados",
+        "id": 130,
+        "types": [
+            "water",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "190",
+            "Attack": "192",
+            "Defense": "196",
+            "Max CP": "2688",
+            "Catch Rate": "8%",
+            "Flee Rate": "7%"
+        },
+        "normal_skills": [
+            "bite",
+            "dragonbreath"
+        ],
+        "special_skills": [
+            "twister",
+            "hydropump",
+            "dragonpulse"
+        ]
+    },
+    {
+        "name": "Lapras",
+        "id": 131,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "info": {
+            "Hit Points": "260",
+            "Attack": "186",
+            "Defense": "190",
+            "Max CP": "2980",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "frostbreath",
+            "iceshard"
+        ],
+        "special_skills": [
+            "icebeam",
+            "dragonpulse",
+            "blizzard"
+        ]
+    },
+    {
+        "name": "Ditto",
+        "id": 132,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "96",
+            "Attack": "110",
+            "Defense": "110",
+            "Max CP": "919",
+            "Catch Rate": "16%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "pound"
+        ],
+        "special_skills": [
+            "struggle"
+        ]
+    },
+    {
+        "name": "Eevee",
+        "id": 133,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "110",
+            "Attack": "114",
+            "Defense": "128",
+            "Max CP": "1077",
+            "Catch Rate": "32%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "tackle",
+            "quickattack"
+        ],
+        "special_skills": [
+            "bodyslam",
+            "dig",
+            "swift"
+        ]
+    },
+    {
+        "name": "Vaporeon",
+        "id": 134,
+        "types": [
+            "water"
+        ],
+        "info": {
+            "Hit Points": "260",
+            "Attack": "186",
+            "Defense": "168",
+            "Max CP": "2816",
+            "Catch Rate": "12%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "watergun"
+        ],
+        "special_skills": [
+            "aquatail",
+            "waterpulse",
+            "hydropump"
+        ]
+    },
+    {
+        "name": "Jolteon",
+        "id": 135,
+        "types": [
+            "electric"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "192",
+            "Defense": "174",
+            "Max CP": "2140",
+            "Catch Rate": "12%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "thundershock"
+        ],
+        "special_skills": [
+            "thunderbolt",
+            "discharge",
+            "thunder"
+        ]
+    },
+    {
+        "name": "Flareon",
+        "id": 136,
+        "types": [
+            "fire"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "238",
+            "Defense": "178",
+            "Max CP": "2643",
+            "Catch Rate": "12%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "ember"
+        ],
+        "special_skills": [
+            "flamethrower",
+            "fireblast",
+            "heatwave"
+        ]
+    },
+    {
+        "name": "Porygon",
+        "id": 137,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "130",
+            "Attack": "156",
+            "Defense": "158",
+            "Max CP": "1691",
+            "Catch Rate": "32%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "tackle",
+            "quickattack"
+        ],
+        "special_skills": [
+            "discharge",
+            "psybeam",
+            "signalbeam"
+        ]
+    },
+    {
+        "name": "Omanyte",
+        "id": 138,
+        "types": [
+            "rock",
+            "water"
+        ],
+        "info": {
+            "Hit Points": "70",
+            "Attack": "132",
+            "Defense": "160",
+            "Max CP": "1119",
+            "Catch Rate": "32%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "watergun",
+            "mudshot"
+        ],
+        "special_skills": [
+            "rocktomb",
+            "ancientpower",
+            "brine"
+        ]
+    },
+    {
+        "name": "Omastar",
+        "id": 139,
+        "types": [
+            "rock",
+            "water"
+        ],
+        "info": {
+            "Hit Points": "140",
+            "Attack": "180",
+            "Defense": "202",
+            "Max CP": "2233",
+            "Catch Rate": "12%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "watergun",
+            "rockthrow"
+        ],
+        "special_skills": [
+            "rockslide",
+            "ancientpower",
+            "hydropump"
+        ]
+    },
+    {
+        "name": "Kabuto",
+        "id": 140,
+        "types": [
+            "rock",
+            "water"
+        ],
+        "info": {
+            "Hit Points": "60",
+            "Attack": "148",
+            "Defense": "142",
+            "Max CP": "1104",
+            "Catch Rate": "32%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "scratch",
+            "mudshot"
+        ],
+        "special_skills": [
+            "aquajet",
+            "rocktomb",
+            "ancientpower"
+        ]
+    },
+    {
+        "name": "Kabutops",
+        "id": 141,
+        "types": [
+            "rock",
+            "water"
+        ],
+        "info": {
+            "Hit Points": "120",
+            "Attack": "190",
+            "Defense": "190",
+            "Max CP": "2130",
+            "Catch Rate": "12%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "furycutter",
+            "mudshot"
+        ],
+        "special_skills": [
+            "waterpulse",
+            "stoneedge",
+            "ancientpower"
+        ]
+    },
+    {
+        "name": "Aerodactyl",
+        "id": 142,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "160",
+            "Attack": "182",
+            "Defense": "162",
+            "Max CP": "2165",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "bite",
+            "steelwing"
+        ],
+        "special_skills": [
+            "ironhead",
+            "hyperbeam",
+            "ancientpower"
+        ]
+    },
+    {
+        "name": "Snorlax",
+        "id": 143,
+        "types": [
+            "normal"
+        ],
+        "info": {
+            "Hit Points": "320",
+            "Attack": "180",
+            "Defense": "180",
+            "Max CP": "3112",
+            "Catch Rate": "16%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "lick",
+            "zenheadbutt"
+        ],
+        "special_skills": [
+            "hyperbeam",
+            "earthquake",
+            "bodyslam"
+        ]
+    },
+    {
+        "name": "Articuno",
+        "id": 144,
+        "types": [
+            "ice",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "198",
+            "Defense": "242",
+            "Max CP": "2978",
+            "Catch Rate": "0%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "frostbreath"
+        ],
+        "special_skills": [
+            "icebeam",
+            "icywind",
+            "blizzard"
+        ]
+    },
+    {
+        "name": "Zapdos",
+        "id": 145,
+        "types": [
+            "electric",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "232",
+            "Defense": "194",
+            "Max CP": "3114",
+            "Catch Rate": "0%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "thundershock"
+        ],
+        "special_skills": [
+            "discharge",
+            "thunderbolt",
+            "thunder"
+        ]
+    },
+    {
+        "name": "Moltres",
+        "id": 146,
+        "types": [
+            "fire",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "180",
+            "Attack": "242",
+            "Defense": "194",
+            "Max CP": "3240",
+            "Catch Rate": "0%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "ember"
+        ],
+        "special_skills": [
+            "fireblast",
+            "heatwave",
+            "flamethrower"
+        ]
+    },
+    {
+        "name": "Dratini",
+        "id": 147,
+        "types": [
+            "dragon"
+        ],
+        "info": {
+            "Hit Points": "82",
+            "Attack": "128",
+            "Defense": "110",
+            "Max CP": "983",
+            "Catch Rate": "32%",
+            "Flee Rate": "9%"
+        },
+        "normal_skills": [
+            "dragonbreath"
+        ],
+        "special_skills": [
+            "wrap",
+            "aquatail",
+            "twister"
+        ]
+    },
+    {
+        "name": "Dragonair",
+        "id": 148,
+        "types": [
+            "dragon"
+        ],
+        "info": {
+            "Hit Points": "122",
+            "Attack": "170",
+            "Defense": "152",
+            "Max CP": "1747",
+            "Catch Rate": "8%",
+            "Flee Rate": "6%"
+        },
+        "normal_skills": [
+            "dragonbreath"
+        ],
+        "special_skills": [
+            "wrap",
+            "aquatail",
+            "dragonpulse"
+        ]
+    },
+    {
+        "name": "Dragonite",
+        "id": 149,
+        "types": [
+            "dragon",
+            "flying"
+        ],
+        "info": {
+            "Hit Points": "182",
+            "Attack": "250",
+            "Defense": "212",
+            "Max CP": "3500",
+            "Catch Rate": "4%",
+            "Flee Rate": "5%"
+        },
+        "normal_skills": [
+            "dragonbreath",
+            "steelwing"
+        ],
+        "special_skills": [
+            "hyperbeam",
+            "dragonclaw",
+            "dragonpulse"
+        ]
+    },
+    {
+        "name": "Mewtwo",
+        "id": 150,
+        "types": [
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "212",
+            "Attack": "284",
+            "Defense": "202",
+            "Max CP": "4144",
+            "Catch Rate": "0%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "confusion",
+            "psychocut"
+        ],
+        "special_skills": [
+            "psychic",
+            "shadowball",
+            "hyperbeam"
+        ]
+    },
+    {
+        "name": "Mew",
+        "id": 151,
+        "types": [
+            "psychic"
+        ],
+        "info": {
+            "Hit Points": "200",
+            "Attack": "220",
+            "Defense": "220",
+            "Max CP": "3299",
+            "Catch Rate": "0%",
+            "Flee Rate": "10%"
+        },
+        "normal_skills": [
+            "pound"
+        ],
+        "special_skills": [
+            "hurricane",
+            "earthquake",
+            "psychic",
+            "dragonpulse",
+            "thunder",
+            "moonblast",
+            "fireblast",
+            "solarbeam",
+            "hyperbeam"
+        ]
+    }
+]

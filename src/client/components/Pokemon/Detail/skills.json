@@ -1,0 +1,2607 @@
+{
+    "version": "1.1",
+    "normal": [
+        {
+            "name": "Acid",
+            "type": "poison",
+            "damage": 10,
+            "energy": 7,
+            "cooldown": 1.05,
+            "knownBy": [
+                {
+                    "id": "023",
+                    "name": "Ekans"
+                },
+                {
+                    "id": "024",
+                    "name": "Arbok"
+                },
+                {
+                    "id": "043",
+                    "name": "Oddish"
+                },
+                {
+                    "id": "044",
+                    "name": "Gloom"
+                },
+                {
+                    "id": "045",
+                    "name": "Vileplume"
+                },
+                {
+                    "id": "069",
+                    "name": "Bellsprout"
+                },
+                {
+                    "id": "070",
+                    "name": "Weepinbell"
+                },
+                {
+                    "id": "071",
+                    "name": "Victreebel"
+                },
+                {
+                    "id": "073",
+                    "name": "Tentacruel"
+                },
+                {
+                    "id": "088",
+                    "name": "Grimer"
+                },
+                {
+                    "id": "089",
+                    "name": "Muk"
+                },
+                {
+                    "id": "109",
+                    "name": "Koffing"
+                },
+                {
+                    "id": "110",
+                    "name": "Weezing"
+                }
+            ]
+        },
+        {
+            "name": "Bite",
+            "type": "dark",
+            "damage": 6,
+            "energy": 7,
+            "cooldown": 0.5,
+            "knownBy": [
+                {
+                    "id": "008",
+                    "name": "Wartortle"
+                },
+                {
+                    "id": "009",
+                    "name": "Blastoise"
+                },
+                {
+                    "id": "020",
+                    "name": "Raticate"
+                },
+                {
+                    "id": "024",
+                    "name": "Arbok"
+                },
+                {
+                    "id": "029",
+                    "name": "Nidoran♀"
+                },
+                {
+                    "id": "030",
+                    "name": "Nidorina"
+                },
+                {
+                    "id": "031",
+                    "name": "Nidoqueen"
+                },
+                {
+                    "id": "033",
+                    "name": "Nidorino"
+                },
+                {
+                    "id": "041",
+                    "name": "Zubat"
+                },
+                {
+                    "id": "042",
+                    "name": "Golbat"
+                },
+                {
+                    "id": "052",
+                    "name": "Meowth"
+                },
+                {
+                    "id": "058",
+                    "name": "Growlithe"
+                },
+                {
+                    "id": "059",
+                    "name": "Arcanine"
+                },
+                {
+                    "id": "130",
+                    "name": "Gyarados"
+                },
+                {
+                    "id": "142",
+                    "name": "Aerodactyl"
+                }
+            ]
+        },
+        {
+            "name": "Bubble",
+            "type": "water",
+            "damage": 25,
+            "energy": 15,
+            "cooldown": 2.3,
+            "knownBy": [
+                {
+                    "id": "007",
+                    "name": "Squirtle"
+                },
+                {
+                    "id": "060",
+                    "name": "Poliwag"
+                },
+                {
+                    "id": "061",
+                    "name": "Poliwhirl"
+                },
+                {
+                    "id": "062",
+                    "name": "Poliwrath"
+                },
+                {
+                    "id": "072",
+                    "name": "Tentacool"
+                },
+                {
+                    "id": "098",
+                    "name": "Krabby"
+                },
+                {
+                    "id": "116",
+                    "name": "Horsea"
+                }
+            ]
+        },
+        {
+            "name": "Bug Bite",
+            "type": "bug",
+            "damage": 5,
+            "energy": 7,
+            "cooldown": 0.45,
+            "knownBy": [
+                {
+                    "id": "010",
+                    "name": "Caterpie"
+                },
+                {
+                    "id": "011",
+                    "name": "Metapod"
+                },
+                {
+                    "id": "012",
+                    "name": "Butterfree"
+                },
+                {
+                    "id": "013",
+                    "name": "Weedle"
+                },
+                {
+                    "id": "014",
+                    "name": "Kakuna"
+                },
+                {
+                    "id": "015",
+                    "name": "Beedrill"
+                },
+                {
+                    "id": "046",
+                    "name": "Paras"
+                },
+                {
+                    "id": "047",
+                    "name": "Parasect"
+                },
+                {
+                    "id": "048",
+                    "name": "Venonat"
+                },
+                {
+                    "id": "049",
+                    "name": "Venomoth"
+                }
+            ]
+        },
+        {
+            "name": "Bullet Punch",
+            "type": "steel",
+            "damage": 10,
+            "energy": 7,
+            "cooldown": 1.2,
+            "knownBy": [
+                {
+                    "id": "068",
+                    "name": "Machamp"
+                },
+                {
+                    "id": "107",
+                    "name": "Hitmonchan"
+                }
+            ]
+        },
+        {
+            "name": "Confusion",
+            "type": "psychic",
+            "damage": 15,
+            "energy": 7,
+            "cooldown": 1.51,
+            "knownBy": [
+                {
+                    "id": "012",
+                    "name": "Butterfree"
+                },
+                {
+                    "id": "048",
+                    "name": "Venonat"
+                },
+                {
+                    "id": "049",
+                    "name": "Venomoth"
+                },
+                {
+                    "id": "055",
+                    "name": "Golduck"
+                },
+                {
+                    "id": "064",
+                    "name": "Kadabra"
+                },
+                {
+                    "id": "065",
+                    "name": "Alakazam"
+                },
+                {
+                    "id": "079",
+                    "name": "Slowpoke"
+                },
+                {
+                    "id": "080",
+                    "name": "Slowbro"
+                },
+                {
+                    "id": "096",
+                    "name": "Drowzee"
+                },
+                {
+                    "id": "097",
+                    "name": "Hypno"
+                },
+                {
+                    "id": "102",
+                    "name": "Exeggcute"
+                },
+                {
+                    "id": "103",
+                    "name": "Exeggutor"
+                },
+                {
+                    "id": "122",
+                    "name": "Mr. Mime"
+                },
+                {
+                    "id": "150",
+                    "name": "Mewtwo"
+                }
+            ]
+        },
+        {
+            "name": "Cut",
+            "type": "normal",
+            "damage": 12,
+            "energy": 7,
+            "cooldown": 1.13,
+            "knownBy": [
+                {
+                    "id": "083",
+                    "name": "Farfetch'd"
+                }
+            ]
+        },
+        {
+            "name": "Dragon Breath",
+            "type": "dragon",
+            "damage": 6,
+            "energy": 7,
+            "cooldown": 0.5,
+            "knownBy": [
+                {
+                    "id": "117",
+                    "name": "Seadra"
+                },
+                {
+                    "id": "130",
+                    "name": "Gyarados"
+                },
+                {
+                    "id": "147",
+                    "name": "Dratini"
+                },
+                {
+                    "id": "148",
+                    "name": "Dragonair"
+                },
+                {
+                    "id": "149",
+                    "name": "Dragonite"
+                }
+            ]
+        },
+        {
+            "name": "Ember",
+            "type": "fire",
+            "damage": 10,
+            "energy": 7,
+            "cooldown": 1.05,
+            "knownBy": [
+                {
+                    "id": "004",
+                    "name": "Charmander"
+                },
+                {
+                    "id": "005",
+                    "name": "Charmeleon"
+                },
+                {
+                    "id": "006",
+                    "name": "Charizard"
+                },
+                {
+                    "id": "037",
+                    "name": "Vulpix"
+                },
+                {
+                    "id": "038",
+                    "name": "Ninetales"
+                },
+                {
+                    "id": "058",
+                    "name": "Growlithe"
+                },
+                {
+                    "id": "077",
+                    "name": "Ponyta"
+                },
+                {
+                    "id": "078",
+                    "name": "Rapidash"
+                },
+                {
+                    "id": "126",
+                    "name": "Magmar"
+                },
+                {
+                    "id": "136",
+                    "name": "Flareon"
+                },
+                {
+                    "id": "146",
+                    "name": "Moltres"
+                }
+            ]
+        },
+        {
+            "name": "Feint Attack",
+            "type": "dark",
+            "damage": 12,
+            "energy": 7,
+            "cooldown": 1.04,
+            "knownBy": [
+                {
+                    "id": "038",
+                    "name": "Ninetales"
+                },
+                {
+                    "id": "039",
+                    "name": "Jigglypuff"
+                },
+                {
+                    "id": "040",
+                    "name": "Wigglytuff"
+                },
+                {
+                    "id": "053",
+                    "name": "Persian"
+                },
+                {
+                    "id": "085",
+                    "name": "Dodrio"
+                }
+            ]
+        },
+        {
+            "name": "Fire Fang",
+            "type": "fire",
+            "damage": 10,
+            "energy": 4,
+            "cooldown": 0.84,
+            "knownBy": [
+                {
+                    "id": "059",
+                    "name": "Arcanine"
+                }
+            ]
+        },
+        {
+            "name": "Frost Breath",
+            "type": "ice",
+            "damage": 9,
+            "energy": 7,
+            "cooldown": 0.81,
+            "knownBy": [
+                {
+                    "id": "087",
+                    "name": "Dewgong"
+                },
+                {
+                    "id": "091",
+                    "name": "Cloyster"
+                },
+                {
+                    "id": "124",
+                    "name": "Jynx"
+                },
+                {
+                    "id": "131",
+                    "name": "Lapras"
+                },
+                {
+                    "id": "144",
+                    "name": "Articuno"
+                }
+            ]
+        },
+        {
+            "name": "Fury Cutter",
+            "type": "bug",
+            "damage": 3,
+            "energy": 12,
+            "cooldown": 0.4,
+            "knownBy": [
+                {
+                    "id": "034",
+                    "name": "Nidoking"
+                },
+                {
+                    "id": "047",
+                    "name": "Parasect"
+                },
+                {
+                    "id": "083",
+                    "name": "Farfetch'd"
+                },
+                {
+                    "id": "123",
+                    "name": "Scyther"
+                },
+                {
+                    "id": "127",
+                    "name": "Pinsir"
+                },
+                {
+                    "id": "141",
+                    "name": "Kabutops"
+                }
+            ]
+        },
+        {
+            "name": "Ice Shard",
+            "type": "ice",
+            "damage": 15,
+            "energy": 7,
+            "cooldown": 1.4,
+            "knownBy": [
+                {
+                    "id": "086",
+                    "name": "Seel"
+                },
+                {
+                    "id": "087",
+                    "name": "Dewgong"
+                },
+                {
+                    "id": "090",
+                    "name": "Shellder"
+                },
+                {
+                    "id": "091",
+                    "name": "Cloyster"
+                },
+                {
+                    "id": "131",
+                    "name": "Lapras"
+                }
+            ]
+        },
+        {
+            "name": "Karate Chop",
+            "type": "fighting",
+            "damage": 6,
+            "energy": 7,
+            "cooldown": 0.8,
+            "knownBy": [
+                {
+                    "id": "056",
+                    "name": "Mankey"
+                },
+                {
+                    "id": "057",
+                    "name": "Primeape"
+                },
+                {
+                    "id": "066",
+                    "name": "Machop"
+                },
+                {
+                    "id": "067",
+                    "name": "Machoke"
+                },
+                {
+                    "id": "068",
+                    "name": "Machamp"
+                },
+                {
+                    "id": "126",
+                    "name": "Magmar"
+                }
+            ]
+        },
+        {
+            "name": "Lick",
+            "type": "ghost",
+            "damage": 5,
+            "energy": 7,
+            "cooldown": 0.5,
+            "knownBy": [
+                {
+                    "id": "092",
+                    "name": "Gastly"
+                },
+                {
+                    "id": "093",
+                    "name": "Haunter"
+                },
+                {
+                    "id": "108",
+                    "name": "Lickitung"
+                },
+                {
+                    "id": "143",
+                    "name": "Snorlax"
+                }
+            ]
+        },
+        {
+            "name": "Low Kick",
+            "type": "fighting",
+            "damage": 5,
+            "energy": 7,
+            "cooldown": 0.6,
+            "knownBy": [
+                {
+                    "id": "057",
+                    "name": "Primeape"
+                },
+                {
+                    "id": "066",
+                    "name": "Machop"
+                },
+                {
+                    "id": "067",
+                    "name": "Machoke"
+                },
+                {
+                    "id": "078",
+                    "name": "Rapidash"
+                },
+                {
+                    "id": "106",
+                    "name": "Hitmonlee"
+                },
+                {
+                    "id": "115",
+                    "name": "Kangaskhan"
+                },
+                {
+                    "id": "125",
+                    "name": "Electabuzz"
+                }
+            ]
+        },
+        {
+            "name": "Metal Claw",
+            "type": "steel",
+            "damage": 12,
+            "energy": 7,
+            "cooldown": 0.63,
+            "knownBy": [
+                {
+                    "id": "028",
+                    "name": "Sandslash"
+                },
+                {
+                    "id": "099",
+                    "name": "Kingler"
+                }
+            ]
+        },
+        {
+            "name": "Mud Shot",
+            "type": "ground",
+            "damage": 12,
+            "energy": 7,
+            "cooldown": 0.55,
+            "knownBy": [
+                {
+                    "id": "027",
+                    "name": "Sandshrew"
+                },
+                {
+                    "id": "028",
+                    "name": "Sandslash"
+                },
+                {
+                    "id": "050",
+                    "name": "Diglett"
+                },
+                {
+                    "id": "051",
+                    "name": "Dugtrio"
+                },
+                {
+                    "id": "060",
+                    "name": "Poliwag"
+                },
+                {
+                    "id": "061",
+                    "name": "Poliwhirl"
+                },
+                {
+                    "id": "062",
+                    "name": "Poliwrath"
+                },
+                {
+                    "id": "075",
+                    "name": "Graveler"
+                },
+                {
+                    "id": "076",
+                    "name": "Golem"
+                },
+                {
+                    "id": "098",
+                    "name": "Krabby"
+                },
+                {
+                    "id": "099",
+                    "name": "Kingler"
+                },
+                {
+                    "id": "118",
+                    "name": "Goldeen"
+                },
+                {
+                    "id": "138",
+                    "name": "Omanyte"
+                },
+                {
+                    "id": "140",
+                    "name": "Kabuto"
+                },
+                {
+                    "id": "141",
+                    "name": "Kabutops"
+                }
+            ]
+        },
+        {
+            "name": "Mud Slap",
+            "type": "ground",
+            "damage": 15,
+            "energy": 9,
+            "cooldown": 1.35,
+            "knownBy": [
+                {
+                    "id": "088",
+                    "name": "Grimer"
+                },
+                {
+                    "id": "104",
+                    "name": "Cubone"
+                },
+                {
+                    "id": "105",
+                    "name": "Marowak"
+                },
+                {
+                    "id": "111",
+                    "name": "Rhyhorn"
+                },
+                {
+                    "id": "112",
+                    "name": "Rhydon"
+                },
+                {
+                    "id": "115",
+                    "name": "Kangaskhan"
+                }
+            ]
+        },
+        {
+            "name": "Peck",
+            "type": "flying",
+            "damage": 10,
+            "energy": 10,
+            "cooldown": 1.15,
+            "knownBy": [
+                {
+                    "id": "021",
+                    "name": "Spearow"
+                },
+                {
+                    "id": "022",
+                    "name": "Fearow"
+                },
+                {
+                    "id": "032",
+                    "name": "Nidoran♂"
+                },
+                {
+                    "id": "084",
+                    "name": "Doduo"
+                },
+                {
+                    "id": "118",
+                    "name": "Goldeen"
+                },
+                {
+                    "id": "119",
+                    "name": "Seaking"
+                }
+            ]
+        },
+        {
+            "name": "Poison Jab",
+            "type": "poison",
+            "damage": 15,
+            "energy": 7,
+            "cooldown": 1.05,
+            "knownBy": [
+                {
+                    "id": "015",
+                    "name": "Beedrill"
+                },
+                {
+                    "id": "031",
+                    "name": "Nidoqueen"
+                },
+                {
+                    "id": "033",
+                    "name": "Nidorino"
+                },
+                {
+                    "id": "034",
+                    "name": "Nidoking"
+                },
+                {
+                    "id": "073",
+                    "name": "Tentacruel"
+                },
+                {
+                    "id": "089",
+                    "name": "Muk"
+                },
+                {
+                    "id": "119",
+                    "name": "Seaking"
+                }
+            ]
+        },
+        {
+            "name": "Poison Sting",
+            "type": "poison",
+            "damage": 6,
+            "energy": 4,
+            "cooldown": 0.575,
+            "knownBy": [
+                {
+                    "id": "013",
+                    "name": "Weedle"
+                },
+                {
+                    "id": "014",
+                    "name": "Kakuna"
+                },
+                {
+                    "id": "023",
+                    "name": "Ekans"
+                },
+                {
+                    "id": "029",
+                    "name": "Nidoran♀"
+                },
+                {
+                    "id": "030",
+                    "name": "Nidorina"
+                },
+                {
+                    "id": "032",
+                    "name": "Nidoran♂"
+                },
+                {
+                    "id": "072",
+                    "name": "Tentacool"
+                }
+            ]
+        },
+        {
+            "name": "Pound",
+            "type": "normal",
+            "damage": 7,
+            "energy": 7,
+            "cooldown": 0.54,
+            "knownBy": [
+                {
+                    "id": "035",
+                    "name": "Clefairy"
+                },
+                {
+                    "id": "036",
+                    "name": "Clefable"
+                },
+                {
+                    "id": "039",
+                    "name": "Jigglypuff"
+                },
+                {
+                    "id": "040",
+                    "name": "Wigglytuff"
+                },
+                {
+                    "id": "096",
+                    "name": "Drowzee"
+                },
+                {
+                    "id": "113",
+                    "name": "Chansey"
+                },
+                {
+                    "id": "124",
+                    "name": "Jynx"
+                },
+                {
+                    "id": "132",
+                    "name": "Ditto"
+                },
+                {
+                    "id": "151",
+                    "name": "Mew"
+                }
+            ]
+        },
+        {
+            "name": "Psycho Cut",
+            "type": "psychic",
+            "damage": 8,
+            "energy": 7,
+            "cooldown": 0.57,
+            "knownBy": [
+                {
+                    "id": "064",
+                    "name": "Kadabra"
+                },
+                {
+                    "id": "065",
+                    "name": "Alakazam"
+                },
+                {
+                    "id": "150",
+                    "name": "Mewtwo"
+                }
+            ]
+        },
+        {
+            "name": "Quick Attack",
+            "type": "normal",
+            "damage": 10,
+            "energy": 7,
+            "cooldown": 1.33,
+            "knownBy": [
+                {
+                    "id": "016",
+                    "name": "Pidgey"
+                },
+                {
+                    "id": "019",
+                    "name": "Rattata"
+                },
+                {
+                    "id": "020",
+                    "name": "Raticate"
+                },
+                {
+                    "id": "021",
+                    "name": "Spearow"
+                },
+                {
+                    "id": "025",
+                    "name": "Pikachu"
+                },
+                {
+                    "id": "037",
+                    "name": "Vulpix"
+                },
+                {
+                    "id": "041",
+                    "name": "Zubat"
+                },
+                {
+                    "id": "084",
+                    "name": "Doduo"
+                },
+                {
+                    "id": "120",
+                    "name": "Staryu"
+                },
+                {
+                    "id": "121",
+                    "name": "Starmie"
+                },
+                {
+                    "id": "133",
+                    "name": "Eevee"
+                },
+                {
+                    "id": "137",
+                    "name": "Porygon"
+                }
+            ]
+        },
+        {
+            "name": "Razor Leaf",
+            "type": "grass",
+            "damage": 15,
+            "energy": 7,
+            "cooldown": 1.45,
+            "knownBy": [
+                {
+                    "id": "002",
+                    "name": "Ivysaur"
+                },
+                {
+                    "id": "003",
+                    "name": "Venusaur"
+                },
+                {
+                    "id": "043",
+                    "name": "Oddish"
+                },
+                {
+                    "id": "044",
+                    "name": "Gloom"
+                },
+                {
+                    "id": "045",
+                    "name": "Vileplume"
+                },
+                {
+                    "id": "070",
+                    "name": "Weepinbell"
+                },
+                {
+                    "id": "071",
+                    "name": "Victreebel"
+                }
+            ]
+        },
+        {
+            "name": "Rock Smash",
+            "type": "fighting",
+            "damage": 15,
+            "energy": 7,
+            "cooldown": 1.41,
+            "knownBy": [
+                {
+                    "id": "104",
+                    "name": "Cubone"
+                },
+                {
+                    "id": "105",
+                    "name": "Marowak"
+                },
+                {
+                    "id": "106",
+                    "name": "Hitmonlee"
+                },
+                {
+                    "id": "107",
+                    "name": "Hitmonchan"
+                },
+                {
+                    "id": "111",
+                    "name": "Rhyhorn"
+                },
+                {
+                    "id": "112",
+                    "name": "Rhydon"
+                },
+                {
+                    "id": "127",
+                    "name": "Pinsir"
+                }
+            ]
+        },
+        {
+            "name": "Rock Throw",
+            "type": "rock",
+            "damage": 12,
+            "energy": 7,
+            "cooldown": 1.36,
+            "knownBy": [
+                {
+                    "id": "074",
+                    "name": "Geodude"
+                },
+                {
+                    "id": "075",
+                    "name": "Graveler"
+                },
+                {
+                    "id": "076",
+                    "name": "Golem"
+                },
+                {
+                    "id": "095",
+                    "name": "Onix"
+                },
+                {
+                    "id": "139",
+                    "name": "Omastar"
+                }
+            ]
+        },
+        {
+            "name": "Scratch",
+            "type": "normal",
+            "damage": 6,
+            "energy": 7,
+            "cooldown": 0.5,
+            "knownBy": [
+                {
+                    "id": "004",
+                    "name": "Charmander"
+                },
+                {
+                    "id": "005",
+                    "name": "Charmeleon"
+                },
+                {
+                    "id": "027",
+                    "name": "Sandshrew"
+                },
+                {
+                    "id": "046",
+                    "name": "Paras"
+                },
+                {
+                    "id": "050",
+                    "name": "Diglett"
+                },
+                {
+                    "id": "052",
+                    "name": "Meowth"
+                },
+                {
+                    "id": "053",
+                    "name": "Persian"
+                },
+                {
+                    "id": "056",
+                    "name": "Mankey"
+                },
+                {
+                    "id": "140",
+                    "name": "Kabuto"
+                }
+            ]
+        },
+        {
+            "name": "Shadow Claw",
+            "type": "ghost",
+            "damage": 11,
+            "energy": 7,
+            "cooldown": 0.95,
+            "knownBy": [
+                {
+                    "id": "093",
+                    "name": "Haunter"
+                },
+                {
+                    "id": "094",
+                    "name": "Gengar"
+                }
+            ]
+        },
+        {
+            "name": "Spark",
+            "type": "electric",
+            "damage": 7,
+            "energy": 4,
+            "cooldown": 0.7,
+            "knownBy": [
+                {
+                    "id": "026",
+                    "name": "Raichu"
+                },
+                {
+                    "id": "081",
+                    "name": "Magnemite"
+                },
+                {
+                    "id": "082",
+                    "name": "Magneton"
+                },
+                {
+                    "id": "100",
+                    "name": "Voltorb"
+                },
+                {
+                    "id": "101",
+                    "name": "Electrode"
+                }
+            ]
+        },
+        {
+            "name": "Splash",
+            "type": "water",
+            "damage": 0,
+            "energy": 7,
+            "cooldown": 1.23,
+            "knownBy": [
+                {
+                    "id": "129",
+                    "name": "Magikarp"
+                }
+            ]
+        },
+        {
+            "name": "Steel Wing",
+            "type": "steel",
+            "damage": 15,
+            "energy": 4,
+            "cooldown": 1.33,
+            "knownBy": [
+                {
+                    "id": "017",
+                    "name": "Pidgeotto"
+                },
+                {
+                    "id": "018",
+                    "name": "Pidgeot"
+                },
+                {
+                    "id": "022",
+                    "name": "Fearow"
+                },
+                {
+                    "id": "085",
+                    "name": "Dodrio"
+                },
+                {
+                    "id": "123",
+                    "name": "Scyther"
+                },
+                {
+                    "id": "142",
+                    "name": "Aerodactyl"
+                },
+                {
+                    "id": "149",
+                    "name": "Dragonite"
+                }
+            ]
+        },
+        {
+            "name": "Sucker Punch",
+            "type": "dark",
+            "damage": 7,
+            "energy": 4,
+            "cooldown": 0.7,
+            "knownBy": [
+                {
+                    "id": "051",
+                    "name": "Dugtrio"
+                },
+                {
+                    "id": "092",
+                    "name": "Gastly"
+                },
+                {
+                    "id": "094",
+                    "name": "Gengar"
+                }
+            ]
+        },
+        {
+            "name": "Tackle",
+            "type": "normal",
+            "damage": 12,
+            "energy": 7,
+            "cooldown": 1.1,
+            "knownBy": [
+                {
+                    "id": "001",
+                    "name": "Bulbasaur"
+                },
+                {
+                    "id": "007",
+                    "name": "Squirtle"
+                },
+                {
+                    "id": "010",
+                    "name": "Caterpie"
+                },
+                {
+                    "id": "011",
+                    "name": "Metapod"
+                },
+                {
+                    "id": "016",
+                    "name": "Pidgey"
+                },
+                {
+                    "id": "019",
+                    "name": "Rattata"
+                },
+                {
+                    "id": "074",
+                    "name": "Geodude"
+                },
+                {
+                    "id": "077",
+                    "name": "Ponyta"
+                },
+                {
+                    "id": "090",
+                    "name": "Shellder"
+                },
+                {
+                    "id": "095",
+                    "name": "Onix"
+                },
+                {
+                    "id": "100",
+                    "name": "Voltorb"
+                },
+                {
+                    "id": "101",
+                    "name": "Electrode"
+                },
+                {
+                    "id": "109",
+                    "name": "Koffing"
+                },
+                {
+                    "id": "110",
+                    "name": "Weezing"
+                },
+                {
+                    "id": "128",
+                    "name": "Tauros"
+                },
+                {
+                    "id": "133",
+                    "name": "Eevee"
+                },
+                {
+                    "id": "137",
+                    "name": "Porygon"
+                }
+            ]
+        },
+        {
+            "name": "Thunder Shock",
+            "type": "electric",
+            "damage": 5,
+            "energy": 7,
+            "cooldown": 0.6,
+            "knownBy": [
+                {
+                    "id": "025",
+                    "name": "Pikachu"
+                },
+                {
+                    "id": "026",
+                    "name": "Raichu"
+                },
+                {
+                    "id": "081",
+                    "name": "Magnemite"
+                },
+                {
+                    "id": "082",
+                    "name": "Magneton"
+                },
+                {
+                    "id": "125",
+                    "name": "Electabuzz"
+                },
+                {
+                    "id": "135",
+                    "name": "Jolteon"
+                },
+                {
+                    "id": "145",
+                    "name": "Zapdos"
+                }
+            ]
+        },
+        {
+            "name": "Vine Whip",
+            "type": "grass",
+            "damage": 7,
+            "energy": 7,
+            "cooldown": 0.65,
+            "knownBy": [
+                {
+                    "id": "001",
+                    "name": "Bulbasaur"
+                },
+                {
+                    "id": "002",
+                    "name": "Ivysaur"
+                },
+                {
+                    "id": "003",
+                    "name": "Venusaur"
+                },
+                {
+                    "id": "069",
+                    "name": "Bellsprout"
+                },
+                {
+                    "id": "114",
+                    "name": "Tangela"
+                }
+            ]
+        },
+        {
+            "name": "Water Gun",
+            "type": "water",
+            "damage": 6,
+            "energy": 7,
+            "cooldown": 0.5,
+            "knownBy": [
+                {
+                    "id": "008",
+                    "name": "Wartortle"
+                },
+                {
+                    "id": "009",
+                    "name": "Blastoise"
+                },
+                {
+                    "id": "054",
+                    "name": "Psyduck"
+                },
+                {
+                    "id": "055",
+                    "name": "Golduck"
+                },
+                {
+                    "id": "079",
+                    "name": "Slowpoke"
+                },
+                {
+                    "id": "080",
+                    "name": "Slowbro"
+                },
+                {
+                    "id": "086",
+                    "name": "Seel"
+                },
+                {
+                    "id": "116",
+                    "name": "Horsea"
+                },
+                {
+                    "id": "117",
+                    "name": "Seadra"
+                },
+                {
+                    "id": "120",
+                    "name": "Staryu"
+                },
+                {
+                    "id": "121",
+                    "name": "Starmie"
+                },
+                {
+                    "id": "134",
+                    "name": "Vaporeon"
+                },
+                {
+                    "id": "138",
+                    "name": "Omanyte"
+                },
+                {
+                    "id": "139",
+                    "name": "Omastar"
+                }
+            ]
+        },
+        {
+            "name": "Wing Attack",
+            "type": "flying",
+            "damage": 9,
+            "energy": 7,
+            "cooldown": 0.75,
+            "knownBy": [
+                {
+                    "id": "006",
+                    "name": "Charizard"
+                },
+                {
+                    "id": "017",
+                    "name": "Pidgeotto"
+                },
+                {
+                    "id": "018",
+                    "name": "Pidgeot"
+                },
+                {
+                    "id": "042",
+                    "name": "Golbat"
+                }
+            ]
+        },
+        {
+            "name": "Zen Headbutt",
+            "type": "psychic",
+            "damage": 12,
+            "energy": 4,
+            "cooldown": 1.05,
+            "knownBy": [
+                {
+                    "id": "035",
+                    "name": "Clefairy"
+                },
+                {
+                    "id": "036",
+                    "name": "Clefable"
+                },
+                {
+                    "id": "054",
+                    "name": "Psyduck"
+                },
+                {
+                    "id": "063",
+                    "name": "Abra"
+                },
+                {
+                    "id": "097",
+                    "name": "Hypno"
+                },
+                {
+                    "id": "103",
+                    "name": "Exeggutor"
+                },
+                {
+                    "id": "108",
+                    "name": "Lickitung"
+                },
+                {
+                    "id": "113",
+                    "name": "Chansey"
+                },
+                {
+                    "id": "122",
+                    "name": "Mr. Mime"
+                },
+                {
+                    "id": "128",
+                    "name": "Tauros"
+                },
+                {
+                    "id": "143",
+                    "name": "Snorlax"
+                }
+            ]
+        }
+    ],
+    "special": [
+        {
+            "name": "Aerial Ace",
+            "type": "flying",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Air Cutter",
+            "type": "flying",
+            "damage": 30,
+            "energy": 4,
+            "duration": 3.3,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Ancient Power",
+            "type": "rock",
+            "damage": 35,
+            "energy": 4,
+            "duration": 3.6,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Aqua Jet",
+            "type": "water",
+            "damage": 25,
+            "energy": 5,
+            "duration": 2.35,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Aqua Tail",
+            "type": "water",
+            "damage": 45,
+            "energy": 2,
+            "duration": 2.35,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Blizzard",
+            "type": "ice",
+            "damage": 100,
+            "energy": 1,
+            "duration": 3.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Body Slam",
+            "type": "normal",
+            "damage": 40,
+            "energy": 2,
+            "duration": 1.56,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Bone Club",
+            "type": "ground",
+            "damage": 25,
+            "energy": 4,
+            "duration": 1.6,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Brick Break",
+            "type": "fighting",
+            "damage": 30,
+            "energy": 3,
+            "duration": 1.6,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Brine",
+            "type": "water",
+            "damage": 25,
+            "energy": 5,
+            "duration": 2.4,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Bubble Beam",
+            "type": "water",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Bug Buzz",
+            "type": "bug",
+            "damage": 75,
+            "energy": 2,
+            "duration": 4.25,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Bulldoze",
+            "type": "ground",
+            "damage": 35,
+            "energy": 4,
+            "duration": 3.4,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Cross Chop",
+            "type": "fighting",
+            "damage": 60,
+            "energy": 1,
+            "duration": 2,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Cross Poison",
+            "type": "poison",
+            "damage": 25,
+            "energy": 4,
+            "duration": 1.5,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Dark Pulse",
+            "type": "dark",
+            "damage": 45,
+            "energy": 3,
+            "duration": 3.5,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Dazzling Gleam",
+            "type": "fairy",
+            "damage": 55,
+            "energy": 3,
+            "duration": 4.2,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Dig",
+            "type": "ground",
+            "damage": 70,
+            "energy": 3,
+            "duration": 5.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Disarming Voice",
+            "type": "fairy",
+            "damage": 25,
+            "energy": 5,
+            "duration": 3.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Discharge",
+            "type": "electric",
+            "damage": 35,
+            "energy": 3,
+            "duration": 2.5,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Dragon Claw",
+            "type": "dragon",
+            "damage": 35,
+            "energy": 2,
+            "duration": 1.5,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Dragon Pulse",
+            "type": "dragon",
+            "damage": 65,
+            "energy": 2,
+            "duration": 3.6,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Draining Kiss",
+            "type": "fairy",
+            "damage": 25,
+            "energy": 5,
+            "duration": 2.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Drill Peck",
+            "type": "flying",
+            "damage": 40,
+            "energy": 3,
+            "duration": 2.7,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Drill Run",
+            "type": "ground",
+            "damage": 50,
+            "energy": 3,
+            "duration": 3.4,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Earthquake",
+            "type": "ground",
+            "damage": 100,
+            "energy": 1,
+            "duration": 4.2,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Fire Blast",
+            "type": "fire",
+            "damage": 100,
+            "energy": 1,
+            "duration": 4.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Fire Punch",
+            "type": "fire",
+            "damage": 40,
+            "energy": 3,
+            "duration": 2.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Flame Burst",
+            "type": "fire",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Flame Charge",
+            "type": "fire",
+            "damage": 25,
+            "energy": 4,
+            "duration": 3.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Flame Wheel",
+            "type": "fire",
+            "damage": 40,
+            "energy": 4,
+            "duration": 4.6,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Flamethrower",
+            "type": "fire",
+            "damage": 55,
+            "energy": 2,
+            "duration": 2.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Flash Cannon",
+            "type": "steel",
+            "damage": 60,
+            "energy": 3,
+            "duration": 3.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Gunk Shot",
+            "type": "poison",
+            "damage": 65,
+            "energy": 1,
+            "duration": 3,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Heat Wave",
+            "type": "fire",
+            "damage": 80,
+            "energy": 1,
+            "duration": 3.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Horn Attack",
+            "type": "normal",
+            "damage": 25,
+            "energy": 4,
+            "duration": 2.2,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Hurricane",
+            "type": "flying",
+            "damage": 80,
+            "energy": 1,
+            "duration": 3.2,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Hydro Pump",
+            "type": "water",
+            "damage": 90,
+            "energy": 1,
+            "duration": 3.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Hyper Beam",
+            "type": "normal",
+            "damage": 120,
+            "energy": 1,
+            "duration": 5,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Hyper Fang",
+            "type": "normal",
+            "damage": 35,
+            "energy": 3,
+            "duration": 2.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Ice Beam",
+            "type": "ice",
+            "damage": 65,
+            "energy": 2,
+            "duration": 3.65,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Ice Punch",
+            "type": "ice",
+            "damage": 45,
+            "energy": 3,
+            "duration": 3.5,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Icy Wind",
+            "type": "ice",
+            "damage": 25,
+            "energy": 5,
+            "duration": 3.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Iron Head",
+            "type": "steel",
+            "damage": 30,
+            "energy": 3,
+            "duration": 2,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Leaf Blade",
+            "type": "grass",
+            "damage": 55,
+            "energy": 2,
+            "duration": 2.8,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Low Sweep",
+            "type": "fighting",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.25,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Magnet Bomb",
+            "type": "steel",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Megahorn",
+            "type": "bug",
+            "damage": 80,
+            "energy": 1,
+            "duration": 3.2,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Moonblast",
+            "type": "fairy",
+            "damage": 85,
+            "energy": 1,
+            "duration": 4.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Mud Bomb",
+            "type": "ground",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.6,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Night Slash",
+            "type": "dark",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.7,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Ominous Wind",
+            "type": "ghost",
+            "damage": 30,
+            "energy": 4,
+            "duration": 3.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Petal Blizzard",
+            "type": "grass",
+            "damage": 65,
+            "energy": 2,
+            "duration": 3.2,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Play Rough",
+            "type": "fairy",
+            "damage": 55,
+            "energy": 2,
+            "duration": 2.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Poison Fang",
+            "type": "poison",
+            "damage": 25,
+            "energy": 5,
+            "duration": 2.4,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Power Gem",
+            "type": "rock",
+            "damage": 40,
+            "energy": 3,
+            "duration": 2.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Power Whip",
+            "type": "grass",
+            "damage": 70,
+            "energy": 1,
+            "duration": 2.8,
+            "critical": 0.12,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Psybeam",
+            "type": "psychic",
+            "damage": 40,
+            "energy": 4,
+            "duration": 3.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Psychic",
+            "type": "psychic",
+            "damage": 55,
+            "energy": 2,
+            "duration": 2.8,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Psyshock",
+            "type": "psychic",
+            "damage": 40,
+            "energy": 3,
+            "duration": 2.7,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Rock Slide",
+            "type": "rock",
+            "damage": 50,
+            "energy": 3,
+            "duration": 3.2,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Rock Tomb",
+            "type": "rock",
+            "damage": 30,
+            "energy": 4,
+            "duration": 3.4,
+            "critical": 0.25,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Scald",
+            "type": "water",
+            "damage": 55,
+            "energy": 3,
+            "duration": 4,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Seed Bomb",
+            "type": "grass",
+            "damage": 40,
+            "energy": 3,
+            "duration": 2.4,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Shadow Ball",
+            "type": "ghost",
+            "damage": 45,
+            "energy": 3,
+            "duration": 3.08,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Signal Beam",
+            "type": "bug",
+            "damage": 45,
+            "energy": 3,
+            "duration": 3.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Sludge",
+            "type": "poison",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.6,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Sludge Bomb",
+            "type": "poison",
+            "damage": 55,
+            "energy": 2,
+            "duration": 2.6,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Sludge Wave",
+            "type": "poison",
+            "damage": 70,
+            "energy": 1,
+            "duration": 3.4,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Solar Beam",
+            "type": "grass",
+            "damage": 120,
+            "energy": 1,
+            "duration": 4.9,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Stomp",
+            "type": "normal",
+            "damage": 30,
+            "energy": 4,
+            "duration": 2.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Stone Edge",
+            "type": "rock",
+            "damage": 80,
+            "energy": 1,
+            "duration": 3.1,
+            "critical": 0.5,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Struggle",
+            "type": "normal",
+            "damage": 15,
+            "energy": 5,
+            "duration": 1.695,
+            "critical": 0,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Submission",
+            "type": "fighting",
+            "damage": 30,
+            "energy": 3,
+            "duration": 2.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Swift",
+            "type": "normal",
+            "damage": 30,
+            "energy": 4,
+            "duration": 3,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Thunder",
+            "type": "electric",
+            "damage": 100,
+            "energy": 1,
+            "duration": 4.3,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "1"
+                }
+            ]
+        },
+        {
+            "name": "Thunder Punch",
+            "type": "electric",
+            "damage": 40,
+            "energy": 3,
+            "duration": 2.4,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        },
+        {
+            "name": "Thunderbolt",
+            "type": "electric",
+            "damage": 55,
+            "energy": 2,
+            "duration": 2.7,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "2"
+                }
+            ]
+        },
+        {
+            "name": "Twister",
+            "type": "dragon",
+            "damage": 25,
+            "energy": 5,
+            "duration": 2.7,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Vice Grip",
+            "type": "normal",
+            "damage": 25,
+            "energy": 5,
+            "duration": 2.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "Water Pulse",
+            "type": "water",
+            "damage": 35,
+            "energy": 4,
+            "duration": 3.3,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "4"
+                }
+            ]
+        },
+        {
+            "name": "Wrap",
+            "type": "normal",
+            "damage": 25,
+            "energy": 5,
+            "duration": 4,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "5"
+                }
+            ]
+        },
+        {
+            "name": "X-Scissor",
+            "type": "bug",
+            "damage": 35,
+            "energy": 3,
+            "duration": 2.1,
+            "critical": 0.05,
+            "knownBy": [
+                {
+                    "id": "3"
+                }
+            ]
+        }
+    ]
+}

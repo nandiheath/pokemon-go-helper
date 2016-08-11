@@ -75,6 +75,15 @@ module.exports = {
 
 	getInventory: function(request , reply) {
 
+		if (request.query.debug)
+		{
+			var dummyResponse = require('./dummyData/response.json');
+			console.log(`pre-normalized test`);
+			return reply(dummyResponse);
+		}
+
+
+
 		if (request.state.pgohelper === undefined ||
 			request.state.pgohelper.token === undefined)
 		{

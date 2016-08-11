@@ -3,7 +3,6 @@ import * as types from '../action_creators.js';
 const initialState = { loggedIn: false , pokemon: { orderBy: 'recent' }, luckyegg: { orderBy: 'evolutions' } };
 
 function app(state = initialState, action) {
-	console.log(state);
 	switch (action.type) {
 		
 		case types.LOGIN_SUCCESS:
