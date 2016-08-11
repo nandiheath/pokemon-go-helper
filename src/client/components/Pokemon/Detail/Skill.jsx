@@ -32,7 +32,7 @@ class Skill extends React.Component {
 				<Col md={2} xs={2}><Type size={25} types={[skill.type]} /></Col>
 				<Col md={2} xs={2}><span className='summary-skill-text'>{(damage / attackTime).toFixed(1)}</span></Col>
 				<Col md={2} xs={2}><span className='summary-skill-text'>{damage.toFixed(1)}</span></Col>
-				<Col md={2} xs={2}><span className='summary-skill-text'>{attackTime + " s"}</span></Col>
+				<Col md={2} xs={2}><span className='summary-skill-text'>{attackTime.toFixed(1) + "s"}</span></Col>
 
 			</Row>
 		);			

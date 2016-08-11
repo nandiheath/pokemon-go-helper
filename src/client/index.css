@@ -615,7 +615,7 @@ app-header-link-current:active {color: #466a6d;}
 	border-radius: 2px;
 }
 .skill-card {
-	width : 95%;
+	width : 100%;
 	margin-left:auto;
 	margin-right: auto;
 }

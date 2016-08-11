@@ -63,7 +63,7 @@ class Summary extends React.Component {
 						<div className="summary-stat-body">{getLevelByCPMultiplier(pokemon.cp_multiplier)}</div>
 					</div>
 					<div className="summary-stat-wrap">
-						<div className="summary-stat-text">UPGRADED</div>
+						<div className="summary-stat-text">UP#</div>
 						<div className="summary-stat-body">{pokemon.num_upgrades}</div>
 					</div>
 				</div>
