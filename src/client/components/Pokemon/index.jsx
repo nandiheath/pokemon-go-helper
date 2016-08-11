@@ -59,6 +59,7 @@ class Pokemon extends React.Component {
 		return(
 			<div className="pokemon">
 				<Modal show={selectedPokemon != null} onHide={this.onModelClosed.bind(this)}>
+					<Modal.Header closeButton></Modal.Header>
 					<Modal.Body>
 						{
 							selectedPokemon != null ?

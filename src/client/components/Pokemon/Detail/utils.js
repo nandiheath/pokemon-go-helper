@@ -95,3 +95,12 @@ function getDPS(skill)
 {
     return skill.damage * (skill.stab ? 1.25 : 1.0) / (skill.class === "fast" ? skill.cooldown : skill.duration);
 }
+
+
+function getScreenSize()
+{
+    return {
+        width :  screen.width,
+        height : screen.height
+    }
+}
