@@ -24,13 +24,9 @@ class Type extends React.Component {
             <div>
                 {
                     types.map( type =>
-
-                        isMobile() ? '' :
-                            <OverlayTrigger key={"type_" + type} trigger={['hover', 'focus']} placement="top" overlay={<Tooltip id="tooltip">{type.toUpperCase()}</Tooltip>}>
-                                <img style={style} alt={type}  src={"/assets/" + type + ".png"} />
-                            </OverlayTrigger>
-
-
+                        <OverlayTrigger key={"type_" + type} trigger={['hover', 'focus']} placement="top" overlay={<Tooltip id="tooltip">{type.toUpperCase()}</Tooltip>}>
+                           <img style={style} alt={type}  src={"/assets/" + type + ".png"} />
+                        </OverlayTrigger>
                     )
                 }
             </div>

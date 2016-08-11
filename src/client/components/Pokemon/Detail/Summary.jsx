@@ -3,8 +3,7 @@ import React from 'react';
 import Avatar from './Avatar';
 import Stats from './Stats';
 import Moves from './Moves';
-import Skill from './Skill';
-import SkillTitle from './SkillTitle';
+import { Skill , SkillTitle } from './Skill';
 import Type from './Type';
 
 import Perfectness from './Perfectness';
@@ -91,7 +90,7 @@ class Summary extends React.Component {
 
 
 				<div className="card skill-card">
-					<SkillTitle type="special" />
+					<SkillTitle type="special"  />
 					{skills.special_attacks.map( skill => <Skill key={skill.name} skill={skill} pokemonDef={pokemonDef} /> )}
 				</div>
 

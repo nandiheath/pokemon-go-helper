@@ -62,11 +62,16 @@ function createSkillObject(pokemonDef ,pokemon , skillname)
 
     // Get the STAB
     object.stab = pokemonDef.types.indexOf(object.type) >= 0;
+
+    object.dps = getDPS(object);
+
     // Debug the Pinsir bug
     if (pokemon.move_2_name.indexOf("cissor") > 0)
     {
         console.log(pokemon.move_2_name);
     }
+
+
     if (pokemon.move_1_name.replace("_FAST" , '').toLowerCase().replace(/[\s_]/g , '') === skillname ||
         pokemon.move_2_name.replace("_FAST" , '').toLowerCase().replace(/[\s_]/g , '') === skillname)
     {
@@ -94,12 +99,14 @@ export function getSkillsByPokemon(pokemon)
 }
 
 function sort(a , b){
-    return getDPS(b) - getDPS(a)
+    return b.dps - a.dps;
 }
 
 function getDPS(skill)
 {
-    return skill.damage * (skill.stab ? 1.25 : 1.0) / (skill.class === "fast" ? skill.cooldown : skill.duration);
+    var crit = skill.critical || 0;
+
+    return skill.damage * (crit * 1.5 + (1- crit) * 1) *(skill.stab ? 1.25 : 1.0) / (skill.class === "fast" ? skill.cooldown : skill.duration);
 }
 
 
