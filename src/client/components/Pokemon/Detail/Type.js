@@ -24,7 +24,7 @@ class Type extends React.Component {
             <div>
                 {
                     types.map( type =>
-                        <OverlayTrigger key={"type_" + type} trigger={['hover', 'focus']} placement="top" overlay={<Tooltip id="tooltip">{type.toUpperCase()}</Tooltip>}>
+                        <OverlayTrigger key={"type_" + type + "_" + Math.random()} trigger={['hover', 'focus']} placement="top" overlay={<Tooltip id="tooltip">{type.toUpperCase()}</Tooltip>}>
                            <img style={style} alt={type}  src={"/assets/" + type + ".png"} />
                         </OverlayTrigger>
                     )

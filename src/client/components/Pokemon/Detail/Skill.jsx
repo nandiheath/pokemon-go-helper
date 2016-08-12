@@ -2,6 +2,8 @@ import React from 'react';
 import { Row , Col } from 'react-bootstrap'
 import Type from './Type'
 import { isMobile } from './../../../utils'
+import TextTooltip from './TextTooltip'
+
 export class Skill extends React.Component {
 	constructor(props) {
 		super(props);
@@ -81,11 +83,26 @@ export class SkillTitle extends React.Component {
 				<Col md={3}><span
 					className='summary-skill-title'>{isFastMove? "FAST" : "SPECIAL"}</span></Col>
 				<Col md={1}><span className='summary-skill-title'>TYPE</span></Col>
-				<Col md={1}><span className='summary-skill-title'>DPS</span></Col>
-				<Col md={1}><span className='summary-skill-title'>DMG</span></Col>
-				<Col md={1}><span className='summary-skill-title'>{isFastMove? "CD" : "DUR"}</span></Col>
-				<Col md={1}><span className='summary-skill-title'>{isFastMove? "EPS" : "EN"}</span></Col>
-				<Col md={1}><span className='summary-skill-title'>{isFastMove? "EN" : "CRI"}</span></Col>
+				<Col md={1}><span className='summary-skill-title'>DPS<TextTooltip text="Damage per second. Critical chance is also take into account"/></span></Col>
+				<Col md={1}><span className='summary-skill-title'>DMG<TextTooltip text="Damge per hit"/></span></Col>
+				<Col md={1}>
+					<span className='summary-skill-title'>
+						{isFastMove? "CD" : "DUR"}
+						{isFastMove? (<TextTooltip text="Cooldown time between each move"/>) : (<TextTooltip text="Duration of the move"/>)}
+					</span>
+				</Col>
+				<Col md={1}>
+					<span className='summary-skill-title'>
+						{isFastMove? "EPS" : "EN"}
+						{isFastMove? (<TextTooltip text="Energy charged per second"/>) : (<TextTooltip text="Energy consumed of the move"/>)}
+					</span>
+				</Col>
+				<Col md={1}>
+					<span className='summary-skill-title'>
+						{isFastMove? "EN" : "CRI"}
+						{isFastMove? (<TextTooltip text="Energy charged per move"/>) : (<TextTooltip text="Critical chance (will due 1.25X damage when critical)"/>)}
+					</span>
+				</Col>
 			</Row>
 		);
 	}

@@ -292,11 +292,40 @@ app-header-link-current:active {color: #466a6d;}
 	margin-left: 3px;
 }
 
+.summary-table-title{
+	font-size: 2em;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.summary-table-title-attack{
+	color:#FF0000;
+}
+
+.summary-table-title-defense{
+	color:#0000FF;
+}
+
 .summary-skill-title{
 	text-transform: uppercase;
 	font-size: 1.2em;
 	font-weight: bold;
 	margin-left: 3px;
+}
+
+.summary-skill-type-title {
+	font-size: 1.2em;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+}
+
+.summary-skill-multiplier{
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 2px;
 }
 
 .skill-en-charge {

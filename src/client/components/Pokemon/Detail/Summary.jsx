@@ -5,11 +5,14 @@ import Stats from './Stats';
 import Moves from './Moves';
 import { Skill , SkillTitle } from './Skill';
 import Type from './Type';
+import TextTooltip from './TextTooltip'
 
 import Perfectness from './Perfectness';
-import { Row } from 'react-bootstrap'
+import { Row  , Table } from 'react-bootstrap'
 
-import { getLevelByCPMultiplier , getSkillsByPokemon , getPokemonDefById } from './../../../utils'
+import { getLevelByCPMultiplier , getSkillsByPokemon , getPokemonDefById , getSkillDefByName,
+	getDoubleAttackTo , getDoubleAttackFrom , getDefTypesRelationship , formatSkillName , getHalfAttackTo
+} from './../../../utils'
 
 
 
@@ -36,6 +39,19 @@ class Summary extends React.Component {
 		var skills = getSkillsByPokemon(pokemon);
 
 		const pokemonDef = getPokemonDefById(pokemon.pokemon_id);
+		const fastSkillDef = getSkillDefByName(formatSkillName(pokemon.move_1_name));
+		const specialSkillDef = getSkillDefByName(formatSkillName(pokemon.move_2_name));
+
+		const fastAtk_1_5 = pokemonDef.types.indexOf(fastSkillDef.type) >= 0 ? getDoubleAttackTo(fastSkillDef.type) : []
+		const fastAtk_1_25 = pokemonDef.types.indexOf(fastSkillDef.type) >= 0 ? [] : getDoubleAttackTo(fastSkillDef.type);
+		const specialAtk_1_5 = pokemonDef.types.indexOf(specialSkillDef.type) >= 0 ? getDoubleAttackTo(specialSkillDef.type) : []
+		const specialAtk_1_25 = pokemonDef.types.indexOf(specialSkillDef.type) >= 0 ? [] : getDoubleAttackTo(specialSkillDef.type);
+
+		const defenseBonus = getDefTypesRelationship(pokemonDef.types);
+		const columnStyle = {
+			width : '45%'
+		}
+
 		return(
 			<div className="summary">
 
@@ -54,7 +70,7 @@ class Summary extends React.Component {
 						<div className="summary-stat-body">{pokemon.stamina_max}</div>
 					</div>
 					<div className="summary-stat-wrap">
-						<div className="summary-stat-text">IV</div>
+						<div className="summary-stat-text">IV<TextTooltip text="Individual value percetage of the pokemon"/></div>
 						<div className="summary-stat-body">{perfectLevel + "%"}</div>
 					</div>
 					<div className="summary-stat-wrap">
@@ -62,7 +78,7 @@ class Summary extends React.Component {
 						<div className="summary-stat-body">{getLevelByCPMultiplier(pokemon.cp_multiplier)}</div>
 					</div>
 					<div className="summary-stat-wrap">
-						<div className="summary-stat-text">UP#</div>
+						<div className="summary-stat-text">UP# <TextTooltip text="How many times you have upgraded your pokemon"/></div>
 						<div className="summary-stat-body">{pokemon.num_upgrades}</div>
 					</div>
 				</div>
@@ -94,6 +110,85 @@ class Summary extends React.Component {
 					{skills.special_attacks.map( skill => <Skill key={skill.name} skill={skill} pokemonDef={pokemonDef} /> )}
 				</div>
 
+
+
+
+				<div className="card skill-card">
+					<span className="summary-table-title summary-table-title-attack">ATTACK</span>
+					<Table striped bordered condensed hover>
+						<thead>
+							<tr>
+								<th><span className="summary-skill-type-title"></span></th>
+								<th style={columnStyle}>
+									<div>
+										<span className='summary-skill-type-title'>{fastSkillDef.name.toUpperCase()}</span>
+										<Type size={25} types={[fastSkillDef.type]} />
+									</div>
+								</th>
+								<th style={columnStyle}>
+									<div>
+										<span className='summary-skill-type-title'>{specialSkillDef.name.toUpperCase()}</span>
+										<Type size={25} types={[specialSkillDef.type]} />
+									</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{
+								fastAtk_1_5.length + specialAtk_1_5.length > 0 ?
+									<tr>
+										<td><span className="summary-skill-multiplier summary-table-title-defense">1.5X</span></td>
+										<td>{fastAtk_1_5.length > 0 ? <Type size={40} types={fastAtk_1_5} /> : ''}</td>
+										<td>{specialAtk_1_5.length > 0 ? <Type size={40} types={specialAtk_1_5} /> : ''}</td>
+									</tr>
+									: <tr></tr>
+							}
+
+							{
+								fastAtk_1_25.length + specialAtk_1_25.length > 0 ?
+									<tr>
+										<td><span className="summary-skill-multiplier summary-table-title-defense">1.25X</span></td>
+										<td>{fastAtk_1_25.length > 0 ? <Type size={40} types={fastAtk_1_25} /> : ''}</td>
+										<td>{specialAtk_1_25.length > 0 ? <Type size={40} types={specialAtk_1_25} /> : ''}</td>
+									</tr>
+									: <tr></tr>
+							}
+						<tr>
+							<td><span className="summary-skill-multiplier summary-table-title-attack">0.8X</span></td>
+							<td>{<Type size={40} types={getHalfAttackTo(fastSkillDef.type)} />}</td>
+							<td>{<Type size={40} types={getHalfAttackTo(specialSkillDef.type)} />}</td>
+						</tr>
+						</tbody>
+					</Table>
+				</div>
+
+				<div className="card skill-card">
+					<span className="summary-table-title summary-table-title-defense">DEFENSE</span>
+					<Table striped bordered condensed hover>
+						<thead>
+							<tr>
+								<th><span className="summary-skill-type-title"></span></th>
+								<th style={{width:'90%'}}>
+									<div>
+										<span className='summary-skill-type-title'>{pokemonDef.name.toUpperCase()}</span>
+										<Type size={25} types={pokemonDef.types} />
+									</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{
+								defenseBonus.map((bonus) =>
+									<tr key={"defense_bonus_" + bonus.multiplier}>
+										<td><span
+											className={"summary-skill-multiplier " + (bonus.multiplier > 1 ? "summary-table-title-attack": "summary-table-title-defense")}>{bonus.multiplier + "X"}</span></td>
+										<td><Type size={40} types={bonus.types}/></td>
+									</tr>
+								)
+							}
+						</tbody>
+					</Table>
+				</div>
 			</div>	
 		);			
 	}
@@ -123,23 +218,3 @@ Summary.Proptypes = {
 
 export default Summary;
 
-/**
- * <Stats
- cp={pokemon.cp}
- stamina_max={pokemon.stamina_max}
- height_m={pokemon.height_m}
- weight_kg={pokemon.weight_kg}
- individual_attack={pokemon.individual_attack}
- individual_defense={pokemon.individual_defense}
- individual_stamina={pokemon.individual_stamina}
- cp_multiplier={pokemon.cp_multiplier}
- num_upgrades={pokemon.num_upgrades}
- additional_cp_multiplier={pokemon.additional_cp_multiplier}
- />
-
-
- <Moves
- move_1={pokemon.move_1_name}
- move_2={pokemon.move_2_name}
- />
- */

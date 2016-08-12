@@ -1,5 +1,7 @@
 import pokemons from './pokemons.json'
 import skills from './skills.json'
+import types from './types.json'
+
 import cookie from 'react-cookie'
 
 const LEVELS = [ 0.094     ,  0.16639787,  0.21573247,  0.25572005,  0.29024988,
@@ -23,8 +25,15 @@ export function getLevelByCPMultiplier(cpMulitiplier)
 }
 
 
+/**
+ * Load content into hash
+ * @type {{}}
+ */
+
+
 var pokemonHash = {};
 var skillHash = {};
+var typeHash = {};
 
 for (var i in pokemons)
 {
@@ -42,6 +51,13 @@ for (var i in skills.special)
     skills.special[i].class = "special";
     skillHash[skills.special[i].name.toLowerCase().replace(/\s/ , '')] = skills.special[i];
 }
+
+for (var i in types.types)
+{
+    typeHash[types.types[i].name] = types.types[i].damage_relations;
+}
+
+console.log(typeHash);
 
 
 export function getPokemonDefById(id)
@@ -72,15 +88,19 @@ function createSkillObject(pokemonDef ,pokemon , skillname)
     }
 
 
-    if (pokemon.move_1_name.replace("_FAST" , '').toLowerCase().replace(/[\s_]/g , '') === skillname ||
-        pokemon.move_2_name.replace("_FAST" , '').toLowerCase().replace(/[\s_]/g , '') === skillname)
+    if (formatSkillName(pokemon.move_1_name) === skillname ||
+        formatSkillName(pokemon.move_2_name) === skillname)
     {
         object.learnt = true;
     }
 
     return object;
-
 }
+
+export function formatSkillName(name) {
+    return name.replace("_FAST", '').toLowerCase().replace(/[\s_]/g, '')
+}
+
 
 export function getSkillsByPokemon(pokemon)
 {
@@ -138,4 +158,93 @@ export function loadStateFromCookie(key , defaultValue)
 export function saveStateToCookie(key , value)
 {
     cookie.save(key , JSON.stringify(value) , { path: '/' });
+}
+
+export function getDoubleAttackTo(type)
+{
+    return typeHash[type].double_damage_to.map(obj => obj.name)
+}
+
+export function getDoubleAttackFrom(type)
+{
+    return typeHash[type].double_damage_from.map(obj => obj.name)
+}
+
+export function getHalfAttackTo(type)
+{
+    return typeHash[type].half_damage_to.map(obj => obj.name).concat(typeHash[type].half_damage_to.map(obj => obj.name))
+}
+
+export function getHalfAttackFrom(type)
+{
+    return typeHash[type].half_damage_from.map(obj => obj.name).concat(typeHash[type].no_damage_from.map(obj => obj.name))
+}
+
+export function getDefTypesRelationship(types)
+{
+    var hash = {};
+
+    for (var i in types)
+    {
+        getHalfAttackFrom(types[i]).map( type => {
+            if (hash[type] === undefined)
+            {
+                hash[type] = 1;
+            }
+
+            hash[type] *= 0.8;
+        });
+
+        getDoubleAttackFrom(types[i]).map( type => {
+
+            if (hash[type] === undefined)
+            {
+                hash[type] = 1;
+            }
+
+            hash[type] *= 1.25;
+        });
+    }
+
+    var returnHash = {}
+
+    for (var type in hash)
+    {
+        var multiplier = (Math.round(hash[type] * 100 ) / 100).toString();
+
+        // Ignore 1X
+        if (multiplier === "1")
+            continue;
+
+        if (returnHash[multiplier] === undefined)
+            returnHash[multiplier] = [];
+
+        returnHash[multiplier].push(type);
+    }
+
+    var returnArray = [];
+    for (var i in returnHash)
+    {
+        if (MultiplierMap[i] === undefined)
+        {
+            continue;
+        }
+
+        returnArray.push({
+            multiplier : MultiplierMap[i],
+            types : returnHash[i]
+        })
+    }
+
+    returnArray.sort( (a , b) => {
+        return a.multiplier - b.multiplier;
+    })
+    return returnArray;
+}
+
+const MultiplierMap = {
+    "0.64" : 0.6,
+    "0.8" : 0.8,
+    "1.25" : 1.25,
+    "1.56" : 1.5
 }
