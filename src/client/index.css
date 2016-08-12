@@ -293,9 +293,9 @@ app-header-link-current:active {color: #466a6d;}
 }
 
 .summary-table-title{
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
-	margin: 5px;
+	margin: 10px;
 }
 
 .summary-table-title-attack{
@@ -309,21 +309,20 @@ app-header-link-current:active {color: #466a6d;}
 .summary-skill-title{
 	text-transform: uppercase;
 	font-size: 1.2em;
-	font-weight: bold;
 	margin-left: 3px;
+	font-weight: bold;
 }
 
 .summary-skill-type-title {
 	font-size: 1.2em;
 	margin-left: 5px;
 	margin-right: 5px;
-	float: left;
 }
 
 .summary-skill-multiplier{
 	font-weight: bolder;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	text-align: center;
 	padding: 2px;
 }
@@ -660,12 +659,14 @@ app-header-link-current:active {color: #466a6d;}
 
 .card {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	margin: 8px;
+	margin: 10px;
+
 	background-color: #fff;
 	transition: box-shadow .25s;
 	border-radius: 2px;
 }
 .skill-card {
+	padding-top: 10px;
 	width : 100%;
 	margin-left:auto;
 	margin-right: auto;

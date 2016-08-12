@@ -10,7 +10,7 @@ import TextTooltip from './TextTooltip'
 import Perfectness from './Perfectness';
 import { Row  , Table } from 'react-bootstrap'
 
-import { getLevelByCPMultiplier , getSkillsByPokemon , getPokemonDefById , getSkillDefByName,
+import { isMobile , getLevelByCPMultiplier , getSkillsByPokemon , getPokemonDefById , getSkillDefByName,
 	getDoubleAttackTo , getDoubleAttackFrom , getDefTypesRelationship , formatSkillName , getHalfAttackTo
 } from './../../../utils'
 
@@ -50,6 +50,15 @@ class Summary extends React.Component {
 		const defenseBonus = getDefTypesRelationship(pokemonDef.types);
 		const columnStyle = {
 			width : '45%'
+		}
+
+		const columnAlignStyle = {
+			textAlign : isMobile() ? 'center' : 'left',
+		}
+
+		const columnHeaderSpanStyle = {
+			float: isMobile() ? 'none' : 'left',
+			fontSize: isMobile() ? 'small' : 'medium'
 		}
 
 		return(
@@ -114,20 +123,22 @@ class Summary extends React.Component {
 
 
 				<div className="card skill-card">
-					<span className="summary-table-title summary-table-title-attack">ATTACK</span>
+					<span className="summary-table-title summary-table-title-attack">ATTACK EFFECTIVENESS</span>
 					<Table striped bordered condensed hover>
 						<thead>
 							<tr>
 								<th><span className="summary-skill-type-title"></span></th>
 								<th style={columnStyle}>
-									<div>
-										<span className='summary-skill-type-title'>{fastSkillDef.name.toUpperCase()}</span>
+									<div style={columnAlignStyle}>
+										<span style={columnHeaderSpanStyle} className='summary-skill-type-title'>{fastSkillDef.name.toUpperCase()}</span>
+										{ isMobile()? <br/> : ''}
 										<Type size={25} types={[fastSkillDef.type]} />
 									</div>
 								</th>
 								<th style={columnStyle}>
-									<div>
-										<span className='summary-skill-type-title'>{specialSkillDef.name.toUpperCase()}</span>
+									<div style={columnAlignStyle}>
+										<span style={columnHeaderSpanStyle} className='summary-skill-type-title'>{specialSkillDef.name.toUpperCase()}</span>
+										{ isMobile()? <br/> : ''}
 										<Type size={25} types={[specialSkillDef.type]} />
 									</div>
 								</th>
@@ -137,7 +148,7 @@ class Summary extends React.Component {
 							{
 								fastAtk_1_5.length + specialAtk_1_5.length > 0 ?
 									<tr>
-										<td><span className="summary-skill-multiplier summary-table-title-defense">1.5X</span></td>
+										<td style={columnAlignStyle}><span className="summary-skill-multiplier summary-table-title-defense">1.5X</span></td>
 										<td>{fastAtk_1_5.length > 0 ? <Type size={40} types={fastAtk_1_5} /> : ''}</td>
 										<td>{specialAtk_1_5.length > 0 ? <Type size={40} types={specialAtk_1_5} /> : ''}</td>
 									</tr>
@@ -147,14 +158,14 @@ class Summary extends React.Component {
 							{
 								fastAtk_1_25.length + specialAtk_1_25.length > 0 ?
 									<tr>
-										<td><span className="summary-skill-multiplier summary-table-title-defense">1.25X</span></td>
+										<td style={columnAlignStyle}><span className="summary-skill-multiplier summary-table-title-defense">1.25X</span></td>
 										<td>{fastAtk_1_25.length > 0 ? <Type size={40} types={fastAtk_1_25} /> : ''}</td>
 										<td>{specialAtk_1_25.length > 0 ? <Type size={40} types={specialAtk_1_25} /> : ''}</td>
 									</tr>
 									: <tr></tr>
 							}
 						<tr>
-							<td><span className="summary-skill-multiplier summary-table-title-attack">0.8X</span></td>
+							<td style={columnAlignStyle}><span className="summary-skill-multiplier summary-table-title-attack">0.8X</span></td>
 							<td>{<Type size={40} types={getHalfAttackTo(fastSkillDef.type)} />}</td>
 							<td>{<Type size={40} types={getHalfAttackTo(specialSkillDef.type)} />}</td>
 						</tr>
@@ -163,15 +174,15 @@ class Summary extends React.Component {
 				</div>
 
 				<div className="card skill-card">
-					<span className="summary-table-title summary-table-title-defense">DEFENSE</span>
+					<span className="summary-table-title summary-table-title-defense">DEFENSE EFFECTIVENESS</span>
 					<Table striped bordered condensed hover>
 						<thead>
 							<tr>
-								<th><span className="summary-skill-type-title"></span></th>
-								<th style={{width:'90%'}}>
+								<th></th>
+								<th style={Object.assign({width:'90%'} , columnAlignStyle)}>
 									<div>
-										<span className='summary-skill-type-title'>{pokemonDef.name.toUpperCase()}</span>
-										<Type size={25} types={pokemonDef.types} />
+										<span style={columnHeaderSpanStyle} className='summary-skill-type-title'>ATTACK FROM</span>
+
 									</div>
 								</th>
 							</tr>
@@ -180,8 +191,12 @@ class Summary extends React.Component {
 							{
 								defenseBonus.map((bonus) =>
 									<tr key={"defense_bonus_" + bonus.multiplier}>
-										<td><span
-											className={"summary-skill-multiplier " + (bonus.multiplier > 1 ? "summary-table-title-attack": "summary-table-title-defense")}>{bonus.multiplier + "X"}</span></td>
+										<td style={columnAlignStyle}>
+											<span
+												className={"summary-skill-multiplier " + (bonus.multiplier > 1 ? "summary-table-title-attack": "summary-table-title-defense")}>
+												{bonus.multiplier + "X"}
+											</span>
+										</td>
 										<td><Type size={40} types={bonus.types}/></td>
 									</tr>
 								)

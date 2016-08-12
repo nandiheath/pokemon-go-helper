@@ -40,14 +40,14 @@ export class Skill extends React.Component {
 			isMobile() ?
 				<Row style={style}>
 					<Col xs={5}><span className='summary-skill-text'>{skill.name.toUpperCase() + (STAB ? "*" : "")}</span></Col>
-					<Col xs={2}><Type size={25} types={[skill.type]} /></Col>
+					<Col xs={2}><Type size={25} style={{marginLeft:15}} types={[skill.type]} /></Col>
 					<Col xs={2}><span className='summary-skill-text'>{skill.dps.toFixed(1)}</span></Col>
 					<Col xs={2}><span className='summary-skill-text'>{energy}</span></Col>
 				</Row>
 				:
 				<Row style={style}>
 					<Col md={3}><span className='summary-skill-text'>{skill.name.toUpperCase() + (STAB ? "*" : "")}</span></Col>
-					<Col md={1}><Type size={25} types={[skill.type]} /></Col>
+					<Col md={1}><Type size={25} style={{marginLeft:15}} types={[skill.type]} /></Col>
 					<Col md={1}><span className='summary-skill-text'>{skill.dps.toFixed(1)}</span></Col>
 					<Col md={1}><span className='summary-skill-text'>{damage.toFixed(1)}</span></Col>
 					<Col md={1}><span className='summary-skill-text'>{attackTime.toFixed(1) + "s"}</span></Col>

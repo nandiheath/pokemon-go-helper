@@ -172,7 +172,7 @@ export function getDoubleAttackFrom(type)
 
 export function getHalfAttackTo(type)
 {
-    return typeHash[type].half_damage_to.map(obj => obj.name).concat(typeHash[type].half_damage_to.map(obj => obj.name))
+    return typeHash[type].half_damage_to.map(obj => obj.name).concat(typeHash[type].no_damage_to.map(obj => obj.name))
 }
 
 export function getHalfAttackFrom(type)

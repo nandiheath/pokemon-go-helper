@@ -14,10 +14,12 @@ class Type extends React.Component {
             props: { types , size }
             } = this;
 
-        const style = {
+        var style = Object.assign({} , {
             width : size,
             height : size
-        }
+        } , this.props.style)
+
+
 
 
         return(
