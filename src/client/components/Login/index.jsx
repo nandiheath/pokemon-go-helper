@@ -8,18 +8,18 @@ import Legal from './Legal';
 class Login extends React.Component {
 	constructor(props) {
 		super(props);
-		this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
 	}
 
 	render() {
 		const {
-			props: { app, login }
+			props: { app, login , geoApiAvaliable}
 		} = this;
-	
+
+
 		return(
 			<div className="login">
 				<Logo />
-				<Form login={login} />
+				<Form {...this.props}/>
 				<Legal />
 			</div>
 		);

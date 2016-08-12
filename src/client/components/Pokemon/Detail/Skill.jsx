@@ -37,10 +37,10 @@ export class Skill extends React.Component {
 		return(
 			isMobile() ?
 				<Row style={style}>
-					<Col md={4} xs={4}><span className='summary-skill-text'>{skill.name.toUpperCase() + (STAB ? "*" : "")}</span></Col>
-					<Col md={2} xs={2}><Type size={25} types={[skill.type]} /></Col>
-					<Col md={2} xs={2}><span className='summary-skill-text'>{skill.dps.toFixed(1)}</span></Col>
-					<Col md={2} xs={2}><span className='summary-skill-text'>{energy}</span></Col>
+					<Col xs={5}><span className='summary-skill-text'>{skill.name.toUpperCase() + (STAB ? "*" : "")}</span></Col>
+					<Col xs={2}><Type size={25} types={[skill.type]} /></Col>
+					<Col xs={2}><span className='summary-skill-text'>{skill.dps.toFixed(1)}</span></Col>
+					<Col xs={2}><span className='summary-skill-text'>{energy}</span></Col>
 				</Row>
 				:
 				<Row style={style}>
@@ -70,11 +70,11 @@ export class SkillTitle extends React.Component {
 		return (
 			isMobile() ?
 			<Row style={style}>
-				<Col xs={4}><span
+				<Col xs={5}><span
 					className='summary-skill-title'>{isFastMove? "FAST" : "SPECIAL"}</span></Col>
 				<Col xs={2}><span className='summary-skill-title'>TYPE</span></Col>
 				<Col xs={2}><span className='summary-skill-title'>DPS</span></Col>
-				<Col xs={2}><span className='summary-skill-title'>{isFastMove? "HPS" : "EN"}</span></Col>
+				<Col xs={2}><span className='summary-skill-title'>{isFastMove? "EPS" : "EN"}</span></Col>
 			</Row>
 				:
 			<Row style={style}>
@@ -84,7 +84,7 @@ export class SkillTitle extends React.Component {
 				<Col md={1}><span className='summary-skill-title'>DPS</span></Col>
 				<Col md={1}><span className='summary-skill-title'>DMG</span></Col>
 				<Col md={1}><span className='summary-skill-title'>{isFastMove? "CD" : "DUR"}</span></Col>
-				<Col md={1}><span className='summary-skill-title'>{isFastMove? "HPS" : "EN"}</span></Col>
+				<Col md={1}><span className='summary-skill-title'>{isFastMove? "EPS" : "EN"}</span></Col>
 				<Col md={1}><span className='summary-skill-title'>{isFastMove? "EN" : "CRI"}</span></Col>
 			</Row>
 		);

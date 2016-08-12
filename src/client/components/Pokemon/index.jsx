@@ -16,24 +16,29 @@ class Pokemon extends React.Component {
 		this.orderBy = this.orderBy.bind(this);
 
 		this.state = {
-			selectedPokemon : null
+			selectedPokemon: null
 		};
 	}
 
 	componentWillMount() {
 
-		this.props.fetchInventory(this.props.location.query.debug)
-		.then(() => {
-
-			})
-		.catch((e) => {
-			// When error , prompt the user to login page
-			console.dir(e);
-			browserHistory.push('/login');
-		});
+		this.fetchData();
 	}
 
-	onModelClosed(){
+	fetchData()
+	{
+		this.props.fetchInventory(this.props.location.query.debug)
+			.then(() => {
+			})
+			.catch((e) => {
+				// When error , prompt the user to login page
+				console.dir(e);
+				browserHistory.push('/login');
+			});
+	}
+
+
+	onModalClosed(){
 		this.setState({
 			selectedPokemon : null
 		})
@@ -58,7 +63,7 @@ class Pokemon extends React.Component {
 		
 		return(
 			<div className="pokemon">
-				<Modal show={selectedPokemon != null} onHide={this.onModelClosed.bind(this)}  bsSize="large">
+				<Modal show={selectedPokemon != null} onHide={this.onModalClosed.bind(this)}  bsSize="large">
 					<Modal.Header closeButton></Modal.Header>
 					<Modal.Body>
 						{

@@ -94,10 +94,10 @@ module.exports = {
 		var longitude = request.state.pgohelper.latitude;
 		var provider = request.state.pgohelper.provider;
 		if (request.query.latitude !== undefined)
-			latitude = request.query.latitude;
+			latitude = parseFloat(request.query.latitude);
 
 		if (request.query.longitude !== undefined)
-			longitude = request.query.longitude;
+			longitude = parseFloat(request.query.longitude);
 
 
 		var client = new pogobuf.Client();

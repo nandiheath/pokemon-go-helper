@@ -1,8 +1,54 @@
 import React from 'react';
 import cookie from 'react-cookie';
 import { Link } from 'react-router';
+import { saveStateToCookie } from './../utils'
 
 export default class App extends React.Component {
+
+	componentWillMount(){
+		this.startMonitorLocation();
+	}
+
+	componentWillUnmount(){
+		clearInterval(this.monitorInterval);
+	}
+
+
+
+	startMonitorLocation(){
+		if (this.monitorInterval != undefined)
+			clearInterval(this.monitorInterval);
+
+		// delay get location after 1 seconds
+		setTimeout(this.updateLocation.bind(this) , 1000);
+
+
+		this.monitorInterval = setInterval(this.updateLocation.bind(this) , 10000);
+	}
+
+	updateLocation(){
+		// check for geolocation api
+		if ("geolocation" in navigator) {
+			// try to get geolocation
+			navigator.geolocation.getCurrentPosition((position) => {
+
+				const lat = position.coords.latitude;
+				const lng = position.coords.longitude;
+
+				if(lat && lng) {
+					this.props.updateLocation(true , lat , lng);
+					saveStateToCookie('app.location' , {geoApiAvaliable : true , lat : lat , lng : lng });
+				} else {
+					this.props.updateLocation(false , null , null);
+				}
+			} , (err) =>{
+				this.props.updateLocation(false , null , null);
+			});
+
+		} else {
+			this.props.updateLocation(false , null , null);
+		}
+	}
 	render() {
 		const {
 			props: { app }

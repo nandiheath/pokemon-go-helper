@@ -1,6 +1,7 @@
 import React from 'react';
 import { bindActionCreators } from 'redux'; 
 import { connect } from 'react-redux';
+import { updateLocation } from '../action_creators.js';
 
 import App from '../components/App';
 
@@ -9,15 +10,15 @@ const mapStateToProps = (state) => {
 		app: state.app
 	};
 };
-/*
+
 const mapDispatchToProps = (dispatch) => {
 	return bindActionCreators({
-		login: login
+		updateLocation: updateLocation
 	}, dispatch);
 };
-*/
+
 export default connect(
-	mapStateToProps//,
-	//	mapDispatchToProps
+	mapStateToProps,
+	mapDispatchToProps
 )(App);
 

@@ -6,18 +6,21 @@ export const REQUEST_START = "REQUEST_START";
 export const REQUEST_FINISH = "REQUEST_FINISH";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAILED = "LOGIN_FAILED";
+export const LOCATION_UPDATE = "LOCATION_UPDATE";
+
 
 // login
 import 'whatwg-fetch'; //polyfill for safari
-export function login(auth,lat,lnd,alt) {
-	return function(dispatch) {
+export function login(auth) {
+	return function(dispatch , getState) {
 
+		const state = getState();
 		// create payload		
 		const payload = {
 			auth: auth,
-			lat:lat,
-			lnd:lnd,
-			alt:alt	
+			lat:state.app.location.lat,
+			lnd:state.app.location.lng,
+			alt:0
 		}
 
 		dispatch(startRequest());
@@ -48,12 +51,16 @@ export function login(auth,lat,lnd,alt) {
 }
 
 export function fetchInventory(debug){
-	return function(dispatch) {
+	return function(dispatch , getState) {
 
 		dispatch(startRequest());
 
+		const state = getState();
+
+		var url = '/api/player/inventory?' + (debug ? 'debug=true' : '');
+		url += "&latitude=" + state.app.location.lat + "&longitude=" + state.app.location.lng;
 		// make request
-		return fetch('/api/player/inventory' + (debug ? '?debug=true' : ''),
+		return fetch(url ,
 			{
 				method: 'GET',
 				headers: {
@@ -124,5 +131,15 @@ export function orderBy(page,by) {
 		type: ORDERBY,
 		page: page,	
 		by: by 
+	};
+}
+
+export function updateLocation(success , lat , lng){
+
+	return {
+		type: LOCATION_UPDATE,
+		success : success,
+		lat : lat ,
+		lng : lng
 	};
 }
