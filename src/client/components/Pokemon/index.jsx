@@ -110,8 +110,8 @@ class Pokemon extends React.Component {
 				
 				// sort by perfectness
 				return pokemon.sort((a,b) => {
-					const aPerf = (a.individual_attack + a.individual_defense + a.individual_stamina);
-					const bPerf = (b.individual_attack + b.individual_defense + b.individual_stamina);
+					const aPerf = (a.individual_attack + a.individual_defense + a.individual_stamina) * 10000 + a.cp;
+					const bPerf = (b.individual_attack + b.individual_defense + b.individual_stamina) * 10000 + b.cp;
 					return bPerf - aPerf;
 				});	
 				
