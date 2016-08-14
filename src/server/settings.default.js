@@ -11,7 +11,8 @@ const defaults = {
 	cookie:{
 		secure : false,
 		domain : null
-	}
+	},
+	proxy : ""
 };
 
 // set default settings

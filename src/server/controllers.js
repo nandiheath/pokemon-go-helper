@@ -3,6 +3,7 @@
 var pogobuf = require('pogobuf');
 var POGOProtos = require('node-pogo-protos').Enums;
 var GoogleAPI = require('./google_login');
+const settings = require(appRoot + '/src/server/settings');
 
 var pokedexPolyFill = require('./dummyData/pokedex.json'); //thanks https://github.com/Biuni/PokemonGOPokedex
 
@@ -107,6 +108,7 @@ module.exports = {
 			resolve(request.state.pgohelper.token);
 		}).then(token => {
 
+			client.setProxy(settings.get('proxy'));
 			client.setAuthInfo(provider, token);
 			client.setPosition(latitude, longitude);
 			return client.init();
