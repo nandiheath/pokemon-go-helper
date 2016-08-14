@@ -125,9 +125,15 @@ function sort(a , b){
 function getDPS(skill)
 {
     var crit = skill.critical || 0;
-
     return skill.damage * (crit * 1.5 + (1- crit) * 1) *(skill.stab ? 1.25 : 1.0) / (skill.class === "fast" ? skill.cooldown : skill.duration);
 }
+
+export function getDamage(skill)
+{
+    var crit = skill.critical || 0;
+    return skill.damage * (crit * 1.5 + (1- crit) * 1) *(skill.stab ? 1.25 : 1.0);
+}
+
 
 
 export function isMobile()
