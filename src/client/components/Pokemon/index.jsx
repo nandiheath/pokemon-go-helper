@@ -6,6 +6,7 @@ import Detail from './Detail';
 import Summary from './Detail/Summary'
 import OrderBy from '../../containers/OrderBy';
 import { Modal } from 'react-bootstrap'
+import {getUnsignedLong} from '../../utils'
 
 class Pokemon extends React.Component {
 	constructor(props) {
@@ -157,9 +158,9 @@ class Pokemon extends React.Component {
 				return pokemon.sort((a,b) => {
 					
 					// sort by pokedex id first	
-					const aTime = a.creation_time_ms.low;
-					const bTime = b.creation_time_ms.low;	
-					return bTime - aTime;	
+					const aTime = a.creation_time_ms;
+					const bTime = b.creation_time_ms;
+					return getUnsignedLong(bTime.high , bTime.low) - getUnsignedLong(aTime.high , aTime.low);
 				});
 				
 			// else return unsorted	

@@ -11,7 +11,8 @@ import Perfectness from './Perfectness';
 import { Row  , Table } from 'react-bootstrap'
 
 import { isMobile , getLevelByCPMultiplier , getSkillsByPokemon , getPokemonDefById , getSkillDefByName,
-	getDoubleAttackTo , getDoubleAttackFrom , getDefTypesRelationship , formatSkillName , getHalfAttackTo
+	getDoubleAttackTo , getDoubleAttackFrom , getDefTypesRelationship , formatSkillName , getHalfAttackTo ,
+	getUnsignedLong
 } from './../../../utils'
 
 
@@ -219,14 +220,7 @@ function getCapturedDays(timeLong)
 	return (hours / 24).toFixed(0) + " days";
 }
 
-function getUnsignedLong(high , low)
-{
-	var x = new Number(high);
-	x *= Math.pow(2 , 32);
-	x += low;
 
-	return x;
-}
 Summary.Proptypes = {
 	pokemon: React.PropTypes.object.isRequired,
 } 

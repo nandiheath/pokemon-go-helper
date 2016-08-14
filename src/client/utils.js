@@ -248,3 +248,11 @@ const MultiplierMap = {
     "1.25" : 1.25,
     "1.56" : 1.5
 }
+
+export function getUnsignedLong(high , low)
+{
+    var x = new Number(high);
+    x *= Math.pow(2 , 32);
+    x += low >>> 0 ;
+    return x;
+}
