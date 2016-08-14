@@ -4,6 +4,7 @@ import Avatar from './Avatar';
 import Stats from './Stats';
 import Moves from './Moves';
 import { Skill , SkillTitle } from './Skill';
+import { SuggestedMove , SuggestedMoveTitle } from './SuggestedMove'
 import Type from './Type';
 import TextTooltip from './TextTooltip'
 
@@ -108,6 +109,8 @@ class Summary extends React.Component {
 					</div>
 				</div>
 
+
+
 				<div className="card skill-card">
 					<SkillTitle type="fast" />
 
@@ -120,6 +123,10 @@ class Summary extends React.Component {
 					{skills.special_attacks.map( skill => <Skill key={skill.name} skill={skill} pokemonDef={pokemonDef} /> )}
 				</div>
 
+				<div className="card skill-card">
+					<SuggestedMoveTitle />
+					<SuggestedMove type={pokemonDef.type} pokemon={pokemon} />
+				</div>
 
 
 
