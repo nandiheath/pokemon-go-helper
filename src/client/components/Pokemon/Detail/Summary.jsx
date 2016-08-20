@@ -220,7 +220,7 @@ class Summary extends React.Component {
 
 function getCapturedDays(timeLong)
 {
-	var intervalMs = new Date().getTime() - getUnsignedLong(timeLong.high , timeLong.low);
+	var intervalMs = new Date().getTime() - timeLong; //getUnsignedLong(timeLong.high , timeLong.low);
 	var hours = intervalMs/(1000 * 3600);
 	if (hours < 24)
 		return hours.toFixed(0) + " hours";

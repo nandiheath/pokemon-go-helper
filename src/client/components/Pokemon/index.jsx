@@ -160,7 +160,8 @@ class Pokemon extends React.Component {
 					// sort by pokedex id first	
 					const aTime = a.creation_time_ms;
 					const bTime = b.creation_time_ms;
-					return getUnsignedLong(bTime.high , bTime.low) - getUnsignedLong(aTime.high , aTime.low);
+					return bTime > aTime;
+					//return getUnsignedLong(bTime.high , bTime.low) - getUnsignedLong(aTime.high , aTime.low);
 				});
 				
 			// else return unsorted	
