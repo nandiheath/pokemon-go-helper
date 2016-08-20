@@ -88,7 +88,7 @@ class Pokemon extends React.Component {
 					// return	
 					return(
 						<Detail
-							key={(aPokemon.id.low+aPokemon.id.low)}
+							key={(aPokemon.id)}
 							pokemon={aPokemon}
 							onPokemonSelected={this.onPokemonSelected.bind(this)}
 						/>

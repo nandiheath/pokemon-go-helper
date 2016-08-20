@@ -44,6 +44,7 @@ class Summary extends React.Component {
 		const fastSkillDef = getSkillDefByName(formatSkillName(pokemon.move_1_name));
 		const specialSkillDef = getSkillDefByName(formatSkillName(pokemon.move_2_name));
 
+
 		const fastAtk_1_5 = pokemonDef.types.indexOf(fastSkillDef.type) >= 0 ? getDoubleAttackTo(fastSkillDef.type) : []
 		const fastAtk_1_25 = pokemonDef.types.indexOf(fastSkillDef.type) >= 0 ? [] : getDoubleAttackTo(fastSkillDef.type);
 		const specialAtk_1_5 = pokemonDef.types.indexOf(specialSkillDef.type) >= 0 ? getDoubleAttackTo(specialSkillDef.type) : []

@@ -81,13 +81,6 @@ function createSkillObject(pokemonDef ,pokemon , skillname)
 
     object.dps = getDPS(object);
 
-    // Debug the Pinsir bug
-    if (pokemon.move_2_name.indexOf("cissor") > 0)
-    {
-        console.log(pokemon.move_2_name);
-    }
-
-
     if (formatSkillName(pokemon.move_1_name) === skillname ||
         formatSkillName(pokemon.move_2_name) === skillname)
     {
@@ -98,7 +91,8 @@ function createSkillObject(pokemonDef ,pokemon , skillname)
 }
 
 export function formatSkillName(name) {
-    return name.replace("_FAST", '').toLowerCase().replace(/[\s_]/g, '')
+    // special handling for x-scissor
+    return name.replace("_FAST", '').toLowerCase().replace('x_scissor' , 'x-scissor').replace(/[\s_]/g, '');
 }
 
 
