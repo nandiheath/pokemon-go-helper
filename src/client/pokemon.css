@@ -1,0 +1,20 @@
+.input-label{
+    line-height: 34px;
+    text-align: right;
+}
+
+.iv-label{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.iv-table {
+    width : 80%!important;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body {
+    height : 100%!important;
+}
