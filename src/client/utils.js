@@ -61,7 +61,7 @@ for (var i in types.types)
     typeHash[types.types[i].name] = types.types[i].damage_relations;
 }
 
-console.log(typeHash);
+
 
 
 export function getPokemonDefById(id)
@@ -374,7 +374,7 @@ export function calculateIV(pId , cp , hp , dust)
         }
     }
 
-    console.log(rootNode)
+
     var count =0;
     var results = [];
     for (var cpm in rootNode)

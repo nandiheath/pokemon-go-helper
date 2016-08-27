@@ -1,7 +1,7 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { browserHistory } from 'react-router';
-import { Row , FormControl , Checkbox , FormGroup , Button , Table } from 'react-bootstrap';
+import { Row , FormControl , Checkbox , FormGroup , Button , Table , Alert } from 'react-bootstrap';
 import {SuggestedMoveTitle , SuggestedMove } from './Detail/SuggestedMove.jsx'
 import Select from 'react-select';
 
@@ -24,7 +24,8 @@ class PokemonNew extends React.Component {
 			stamina : false,
 			appraiseIndex : 0,
 			team : "red" ,
-			possibleIVs : []
+			possibleIVs : [] ,
+			calculated : false
 		};
 	}
 
@@ -69,6 +70,15 @@ class PokemonNew extends React.Component {
 		this.setState({appraiseIndex: val.value})
 	}
 
+	onClearButtonPressed()
+	{
+		this.setState({possibleIVs : [] , calculated: false});
+	}
+
+	onPowerupButtonPressed()
+	{
+
+	}
 	onCalculateButtonPressed()
 	{
 		const { pId , cp , hp , dust, team ,
@@ -76,6 +86,7 @@ class PokemonNew extends React.Component {
 			} = this.state;
 
 		const possibleIVs = utils.calculateIV(pId , cp , hp , dust);
+
 
 
 		let finalizedIVs = [];
@@ -93,25 +104,32 @@ class PokemonNew extends React.Component {
 			}
 		}
 
-		this.setState({possibleIVs : finalizedIVs});
+		this.setState({possibleIVs : finalizedIVs , calculated : true});
 	}
 
 	render() {
 		const { pId , cp , hp , dust, team ,
-			defense , attack , stamina , appraiseIndex , possibleIVs
+			defense , attack , stamina , appraiseIndex , possibleIVs ,
+			calculated
 			} = this.state;
 
 
 		//test();
 
-		const ivTable = possibleIVs.length == 0 ? '' :
+		const ivTable = possibleIVs.length == 0 ? (calculated ?
+			<Alert bsStyle="warning" className="pokemon-result-message">
+				Sorry , no results found. Please verify your input and try again
+			</Alert> : '' )
+			:
 			(<div >
 				<Table className="iv-table" bordered striped condensed hover>
 					<thead>
-						<th>Perfection</th>
-						<th>Attack</th>
-						<th>Defense</th>
-						<th>Stamina</th>
+						<tr>
+							<th>Perfection</th>
+							<th>Attack</th>
+							<th>Defense</th>
+							<th>Stamina</th>
+						</tr>
 					</thead>
 					<tbody>
 					{
@@ -235,12 +253,31 @@ class PokemonNew extends React.Component {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-xs-3 input-label"></div>
+					<div className="col-xs-3 input-label">
+						{
+							calculated ?
+								<Button bsStyle="danger" style={{marginLeft:20}}onClick={this.onClearButtonPressed.bind(this)}>
+									Clear
+								</Button> : ''
+						}
+
+					</div>
 					<div className="col-xs-8">
+
 						<Button bsStyle="success" onClick={this.onCalculateButtonPressed.bind(this)}>
 							Calculate
 						</Button>
+
+						{
+							calculated && possibleIVs.length > 0?
+								<Button bsStyle="info" style={{marginLeft:20}} onClick={this.onPowerupButtonPressed.bind(this)}>
+									Power up
+								</Button> : ''
+						}
+
+
 					</div>
+
 				</div>
 				<div className="row">
 					<div style={pokemonIcon}></div>

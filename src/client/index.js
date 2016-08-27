@@ -17,17 +17,19 @@ import Login from './containers/Login';
 import Pokemon from './containers/Pokemon';
 import LuckyEgg from './containers/LuckyEgg';
 import PokemonNew from './containers/PokemonNew'
+import Info from './components/Info';
 
 // create store
 const store = makeStore();
 
 // routes
 const routes = <Route path="/" component={App}>
-	<IndexRedirect to="/pokemon" />
+	<IndexRedirect to="/info" />
+	<Route path="/info" component={Info} />
 	<Route path="/login" component={Login} />
 	<Route path="/luckyegg" component={LuckyEgg} />
-	<Route path="/pokemon" component={Pokemon} />
-	<Route path="/pokemon_2" component={PokemonNew} />
+	<Route path="/pokemons" component={Pokemon} />
+	<Route path="/pokemon" component={PokemonNew} />
 </Route>
 
 

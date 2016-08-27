@@ -3,6 +3,7 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
+  devtool: 'cheap-module-source-map',
   entry: './src/client/index.js'
   ,
   output: {
@@ -19,6 +20,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx','.json']
   },
   module: {
+
     loaders: [
       {
         test: /\.jsx?$/,
@@ -44,6 +46,11 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
     new ExtractTextPlugin("index.css"),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.min\.css$/,
