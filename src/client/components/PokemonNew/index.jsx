@@ -2,7 +2,7 @@ import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { browserHistory } from 'react-router';
 import { Row , FormControl , Checkbox , FormGroup , Button , Table } from 'react-bootstrap';
-
+import {SuggestedMoveTitle , SuggestedMove } from './Detail/SuggestedMove.jsx'
 import Select from 'react-select';
 
 
@@ -55,6 +55,15 @@ class PokemonNew extends React.Component {
 		this.setState(state);
 	}
 
+	onFieldFocus(type , evt)
+	{
+		var state = this.state;
+		state[type] = '';
+		evt.target.value = ''
+		this.setState(state);
+
+	}
+
 	onAppraiseChanged(val)
 	{
 		this.setState({appraiseIndex: val.value})
@@ -97,7 +106,7 @@ class PokemonNew extends React.Component {
 
 		const ivTable = possibleIVs.length == 0 ? '' :
 			(<div >
-				<Table className="iv-table" bordered striped consensed hover>
+				<Table className="iv-table" bordered striped condensed hover>
 					<thead>
 						<th>Perfection</th>
 						<th>Attack</th>
@@ -131,6 +140,13 @@ class PokemonNew extends React.Component {
 
 		const col = 2997 - (((pId - 1) % 31)) * 96;
 		const row = 2565 - 96 * (((pId - 1) / 31 ) | 0 );
+
+		// Create dummy object for reuse.
+		// TODO: refactor this
+
+		const pokemon = {
+			pokemon_id : pId
+		}
 		const pokemonIcon = {
 			width : 96,
 			height : 96,
@@ -165,14 +181,14 @@ class PokemonNew extends React.Component {
 				<div className="row">
 					<label className="col-xs-3 input-label">HP</label>
 					<div className="col-xs-8">
-						<FormControl value={hp} onChange={this.onHPChanged.bind(this)}></FormControl>
+						<FormControl defaultValue={hp} onFocus={this.onFieldFocus.bind(this , 'hp')} onBlur={this.onHPChanged.bind(this)}></FormControl>
 					</div>
 				</div>
 
 				<div className="row">
 					<label className="col-xs-3 input-label">CP</label>
 					<div className="col-xs-8">
-						<FormControl value={cp} onChange={this.onCPChanged.bind(this)}></FormControl>
+						<FormControl defaultValue={cp} onFocus={this.onFieldFocus.bind(this , 'cp')} onBlur={this.onCPChanged.bind(this)}></FormControl>
 					</div>
 				</div>
 
@@ -232,7 +248,12 @@ class PokemonNew extends React.Component {
 				{
 					ivTable
 				}
+				<Table striped bordered style={{width : '80%' , margin : 'auto'}}>
+					<SuggestedMoveTitle />
+					<SuggestedMove pokemon={pokemon} />
+				</Table>
 			</div>
+
 		)
 	}
 }

@@ -96,7 +96,7 @@ function createSkillObject(pokemonDef ,pokemon , skillname)
 
 export function formatSkillName(name) {
     // special handling for x-scissor
-    return name.replace("_FAST", '').toLowerCase().replace('x_scissor' , 'x-scissor').replace(/[\s_]/g, '');
+    return name == null ? '' : name.replace("_FAST", '').toLowerCase().replace('x_scissor' , 'x-scissor').replace(/[\s_]/g, '');
 }
 
 
