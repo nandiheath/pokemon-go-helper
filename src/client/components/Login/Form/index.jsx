@@ -113,7 +113,7 @@ class Form extends React.Component {
 		// login	
 		this.props.login(auth)
 		.then(() => { 
-			browserHistory.push('/pokemon'); 
+			browserHistory.push('/pokemons');
 		})
 		.catch((e) => { 
 			console.dir(e);	
